@@ -1,8 +1,19 @@
 /* eslint-disable new-cap */
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Antic_Didone } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+// const pd = Playfair_Display({
+//   subsets: ["latin"],
+//   display: "swap",
+//   variable: "--font-Playfair_Display",
+// });
+
+const didot = Antic_Didone({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400"],
+  variable: "--font-Antic_Didone",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -12,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={didot.className}>{children}</body>
     </html>
   );
 }
