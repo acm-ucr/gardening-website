@@ -9,6 +9,7 @@ const Welcome = () => {
         <div className="w-1/2" />
 
         <div className="w-1/2">
+          <div className="bg-green-300">Hello!</div>
           <p className="w-1/2 text-sm">
             {
               "WELCOME TO THE UCR GARDENING CLUB WEBSITE. IF YOU'RE LOOKING AT THIS BEFORE OUR FIRST MEETING, GOOD JOB! THIS IS WHAT WE'LL BE WORKING ON FOR THE NEXT 10 WEEKS"
