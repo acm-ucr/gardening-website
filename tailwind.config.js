@@ -5,9 +5,22 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/data/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/utils/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        gardening: {
+          "green-100": "#516F59",
+          "white-100": "#F4F2E2",
+          "red-100": "#C78E7C",
+          "red-200": "#B47D6B",
+          "brown-100": "#3E2913",
+          "yellow-100": "#D9B761",
+          "yellow-200": "#C5A040",
+        },
+      },
+    },
   },
   plugins: [],
 };
