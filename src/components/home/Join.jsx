@@ -1,4 +1,4 @@
-import Plant1 from "@/public/Plant1.png";
+import Plant1 from "@/public/Plant1.webp";
 import Image from "next/image";
 
 const Join = () => {
