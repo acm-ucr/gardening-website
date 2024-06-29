@@ -10,7 +10,7 @@ const Navbar = () => {
         <Link href="/gallery">Scrapbook</Link>
         <Link
           href="/gallery"
-          className="bg-gardening-white-100 text-gardening-green-100 font-bold rounded-full p-2"
+          className="bg-gardening-tan-100 text-gardening-green-100 font-bold rounded-full p-2"
         >
           Join Now
         </Link>
