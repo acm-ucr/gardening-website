@@ -12,7 +12,8 @@ module.exports = {
       colors: {
         gardening: {
           "green-100": "#516F59",
-          "white-100": "#F4F2E2",
+          "tan-100": "#F4F2E2",
+          "tan-200": "#C0BDA5",
           "red-100": "#C78E7C",
           "red-200": "#B47D6B",
           "brown-100": "#3E2913",
