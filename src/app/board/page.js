@@ -1,5 +1,5 @@
-import Board from "@/components/board/board";
-import GroupPic from "@/components/board/groupPic";
+import Board from "@/components/board/Board";
+import GroupPic from "@/components/board/GroupPic";
 
 const page = () => {
   return (
