@@ -1,7 +1,7 @@
 /* eslint-disable new-cap */
 import "./globals.css";
 import { Karma } from "next/font/google";
-import Navbar from "@/components/Navbar";
+import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const karma = Karma({
@@ -20,8 +20,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={karma.className}>
-        <Navbar />
+      <body className={`${karma.className} bg-gardening-tan-100`}>
+        <Navigation />
         {children}
         <Footer />
       </body>
