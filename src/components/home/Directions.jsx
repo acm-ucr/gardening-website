@@ -6,7 +6,7 @@ const Directions = () => {
       <div className="text-white font-extrabold text-6xl ">
         How to get to Our Garden
       </div>
-      <div className=" h-[70%] w-[90%] bg-gardening-yellow-300 my-[2%] border-2 border-gardening-brown-300 rounded-lg"></div>
+      <div className=" h-[70%] w-[90%] bg-gardening-tan-200 my-[2%] border-2 border-gardening-brown-100 rounded-lg"></div>
     </div>
   );
 };
