@@ -19,20 +19,20 @@ const Navigation = () => {
             src={logo}
             alt="UCR Gardening"
           /> */}
-          <p className="text-gardening-tan-100 text-3xl font-black">
+          <p className="text-gardening-white-100 text-3xl font-black">
             UCR Gardening
           </p>
         </Link>
       </Navbar.Brand>
 
       <Navbar.Collapse className="items-center md:justify-end justify-center">
-        <Nav className="w-full flex items-center gap-x-20 font-lg text-gardening-tan-100 text-2xl">
+        <Nav className="w-full flex items-center gap-x-20 font-lg text-gardening-white-100 text-2xl">
           <Link href="/board">Board</Link>
           <Link href="/events">Calendar</Link>
           <Link href="/gallery">Scrapbook</Link>
           <Link
             href="/gallery"
-            className="bg-gardening-tan-00 text-gardening-green-100 font-bold rounded-full pt-1 px-3"
+            className="bg-gardening-white-00 text-gardening-green-100 font-bold rounded-full pt-1 px-3"
           >
             Join Now
           </Link>

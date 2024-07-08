@@ -1,6 +1,6 @@
 const Tips = () => {
   return (
-    <div className="p-10 flex items-center justify-around bg-gardening-tan-100">
+    <div className="p-10 flex items-center justify-around">
       <div className="w-96 h-96 bg-gardening-tan-200 border-[3px] border-gardening-brown-100 rounded-lg" />
       <div className="flex flex-col w-2/5">
         <p className="text-5xl font-bold text-center mb-4">
