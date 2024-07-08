@@ -1,5 +1,12 @@
+import WhyJoin from "./WhyJoin";
+
 const Join = () => {
-  return <div>Join</div>;
+  return (
+    <div>
+      Join
+      <WhyJoin />
+    </div>
+  );
 };
 
 export default Join;
