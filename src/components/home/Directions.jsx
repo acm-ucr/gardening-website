@@ -2,11 +2,11 @@ import React from "react";
 
 const Directions = () => {
   return (
-    <div className=" flex flex-col justify-center items-center bg-gardening-brown-200 h-screen">
+    <div className="py-14 flex flex-col justify-center items-center bg-gardening-brown-200">
       <div className="text-white font-extrabold text-6xl ">
         How to get to Our Garden
       </div>
-      <div className=" h-[70%] w-[90%] bg-gardening-tan-200 my-[2%] border-2 border-gardening-brown-100 rounded-lg"></div>
+      <div className="h-96 w-[85%] bg-gardening-tan-200 my-[2%] border-2 border-gardening-brown-100 rounded-lg"></div>
     </div>
   );
 };
