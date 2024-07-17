@@ -1,92 +1,64 @@
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faDiscord } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
+import { FaInstagram, FaDiscord, FaLink } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div className="h-32 flex flex-row bg-gardening-green-100">
-      <div className="grow-[6] sm:grow-[7]">
-        <div className="flex flex-col pl-2 sm:pl-8">
-          <p className="font-bold text-white text-base sm:text-lg pb-2 pt-4">
-            Join Our Newsletter!
-          </p>
+    <div className="w-full bg-gardening-green-100 py-5">
+      <div className="flex flex-col sm:flex-row px-5 text-white mt-3">
+        <div className="flex grow-[8] justify-center sm:justify-start">
+          <div className="flex flex-col">
+            <p className="mb-3 font-bold text-4xl">Join Our Newsletter!</p>
 
-          <input
-            type="text"
-            className="text-xs px-2 py-2 w-20 sm:w-64 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="xyz@gmail.com"
-          />
+            <input
+              type="text"
+              className="mb-5 p-2 text-gray-600 font-semibold rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[#D9D9D9]"
+              placeholder="Email address"
+            />
+          </div>
         </div>
-      </div>
 
-      <div className="grow-[1]">
-        <div className=" flex flex-col">
-          <p className="font-bold text-white text-base sm:text-lg pt-4">
-            About Us
-          </p>
+        <div className="flex grow-[2] justify-around sm:justify-around text-xl sm:text-3xl">
+          <div className="flex flex-col">
+            <p className="font-bold">About Us</p>
 
-          <Link
-            href="/board"
-            className="font-semibold text-xs text-white pt-1 sm:pt-2"
-          >
-            OUR BOARD
-          </Link>
+            <Link
+              href="/board"
+              className="mt-2 font-semibold text-sm sm:text-lg"
+            >
+              OUR BOARD
+            </Link>
 
-          <Link
-            href="/events"
-            className="font-semibold text-xs text-white pt-1 sm:pt-2"
-          >
-            EVENTS
-          </Link>
-        </div>
-      </div>
-
-      <div className="grow-[1]">
-        <div className="flex flex-col">
-          <p className="font-bold text-white text-base sm:text-lg pt-4">
-            Get in Touch
-          </p>
-
-          <div className="flex flex-row">
-            <FontAwesomeIcon
-              className="mt-0.5 h-4 w-4 mr-0.5 text-white"
-              icon={faInstagram}
-            />
-
-            <p className="text-xs text-white pt-1 font-semibold">
-              @ucrgardening
-            </p>
+            <Link
+              href="/events"
+              className="mt-2 font-semibold text-sm sm:text-lg"
+            >
+              EVENTS
+            </Link>
           </div>
 
-          <div className="flex flex-row">
-            <FontAwesomeIcon
-              className="mt-0.5 h-4 w-4 text-white mr-1"
-              icon={faEnvelope}
-            />
-            <p className="text-xs text-white pt-1 font-semibold">
-              ucrgardening@gmail.com
-            </p>
-          </div>
+          <div className="flex flex-col">
+            <p className="font-bold">Get in Touch</p>
 
-          <div className="flex flex-row">
-            <FontAwesomeIcon
-              className="mt-0.5 h-4 w-4 text-white mr-1"
-              icon={faDiscord}
-            />
-            <p className="text-xs text-white pt-1 font-semibold">
-              Discord Channel
-            </p>
-          </div>
+            <div className="flex flex-row mt-2 align-end">
+              <FaInstagram className="mr-2" />
+              <p className="font-semibold text-lg">@ucrgardening</p>
+            </div>
 
-          <div className="flex flex-row">
-            <FontAwesomeIcon
-              className="rotate-90 mt-0.5 h-4 w-4 text-white mr-1"
-              icon={faLink}
-            />
-            <p className="text-xs text-white  text-md pt-1 font-semibold">
-              Become a Member
-            </p>
+            <div className="flex flex-row mt-2 align-end">
+              <IoMdMail className="mr-2" />
+              <p className="font-semibold text-lg">ucrgardening@gmail.com</p>
+            </div>
+
+            <div className="flex flex-row mt-2 align-end">
+              <FaDiscord className="mr-2" />
+              <p className="font-semibold text-lg">Discord Channel</p>
+            </div>
+
+            <div className="flex flex-row mt-2 align-end">
+              <FaLink className="mr-2" />
+              <p className="font-semibold text-lg">Become a Member</p>
+            </div>
           </div>
         </div>
       </div>
