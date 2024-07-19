@@ -3,7 +3,7 @@ import lamp1 from "@/public/lamp1.webp";
 import leaves1 from "@/public/leaves1.webp";
 import leaves2 from "@/public/leaves2.webp";
 
-function GroupPic() {
+const GroupPic = () => {
   return (
     <div className="w-full flex flex-col items-center">
       <div className="flex items-center pt-[5%]">
@@ -29,6 +29,6 @@ function GroupPic() {
       </div>
     </div>
   );
-}
+};
 
 export default GroupPic;
