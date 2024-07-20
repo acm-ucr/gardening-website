@@ -75,10 +75,9 @@ const Board = () => {
           </div>
         </div>
       </div>
+      <GroupPic />;
     </div>
   );
 };
 
 export default Board;
-
-<GroupPic />;
