@@ -1,7 +1,7 @@
 import Image from "next/image";
 import placeholder from "@/public/catOrangeGardening.webp";
 
-const Page = () => {
+const Gallery = () => {
   return (
     <div className=" p-16">
       <div className=" px-4 py-12 text-gardening-brown-100 text-6xl font-black">
@@ -23,4 +23,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Gallery;

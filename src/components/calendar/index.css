@@ -1,0 +1,14 @@
+.rbc-header {
+  padding: 0px;
+}
+
+.rbc-month-view {
+  border-radius: 10px;
+  overflow: hidden;
+  border-width: 2px;
+  border-color: #76995b;
+}
+
+.rbc-month-header {
+  background-color: #76995b;
+}

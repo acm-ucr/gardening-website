@@ -29,9 +29,9 @@ const Navigation = () => {
         <Nav className="w-full flex items-center gap-x-20 font-lg text-gardening-white-100 text-2xl">
           <Link href="/board">Board</Link>
           <Link href="/events">Calendar</Link>
-          <Link href="/gallery">Scrapbook</Link>
+          <Link href="/scrapbook">Scrapbook</Link>
           <Link
-            href="/gallery"
+            href="/scrapbook"
             className="bg-gardening-white-00 text-gardening-green-100 font-bold rounded-full pt-1 px-3"
           >
             Join Now

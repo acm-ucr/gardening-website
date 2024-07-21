@@ -7,9 +7,9 @@ const Navbar = () => {
       <div className="w-1/5 flex justify-around">
         <Link href="/board">Board</Link>
         <Link href="/events">Calendar</Link>
-        <Link href="/gallery">Scrapbook</Link>
+        <Link href="/scrapbook">Scrapbook</Link>
         <Link
-          href="/gallery"
+          href="/scrapbook"
           className="bg-gardening-tan-100 text-gardening-green-100 font-bold rounded-full p-2"
         >
           Join Now
