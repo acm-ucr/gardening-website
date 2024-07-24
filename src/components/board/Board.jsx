@@ -1,7 +1,7 @@
 "use client";
+import GroupPic from "@/components/board/GroupPic";
 import { BoardData } from "@/data/board.js";
 import Card from "@/components/board/Card";
-
 const Board = () => {
   return (
     <div className="w-5/6 mx-auto">
@@ -22,6 +22,7 @@ const Board = () => {
           ))}
         </div>
       </div>
+      <GroupPic />;
     </div>
   );
 };
