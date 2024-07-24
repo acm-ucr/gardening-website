@@ -6,7 +6,7 @@ import Nav from "react-bootstrap/Nav";
 
 const Navigation = () => {
   return (
-    <Navbar className="bg-gardening-green-100 p-5 flex justify-between items-center shadow-lg">
+    <Navbar className="bg-gardening-green-100 p-5 flex justify-between items-center shadow-lg w-full">
       <Navbar.Brand>
         <Link
           onClick={() => setSelected("")}
