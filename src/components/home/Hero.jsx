@@ -6,13 +6,6 @@ const Hero = () => {
       <div style={styles.leftSection}>
         <h1 style={styles.welcomeText}>Welcome to</h1>
         <h1 style={styles.mainTitle}>UCR Gardening!</h1>
-        <div>
-          <img 
-            src="your_image_path_here" 
-            alt="Gardening Illustration" 
-            style={styles.image}
-          />
-        </div>
       </div>
       <div style={styles.rightSection}>
         {/* Placeholder for the content on the right side */}
