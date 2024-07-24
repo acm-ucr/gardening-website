@@ -20,7 +20,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${karma.className} bg-gardening-tan-100`}>
+      <body
+        className={`${karma.className} bg-gardening-tan-100 overflow-x-hidden`}
+      >
         <Navigation />
         {children}
         <Footer />
