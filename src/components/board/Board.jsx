@@ -1,5 +1,4 @@
 "use client";
-import GroupPic from "@/components/board/GroupPic";
 import { BoardData } from "@/data/board.js";
 import Card from "@/components/board/Card";
 const Board = () => {
@@ -22,7 +21,6 @@ const Board = () => {
           ))}
         </div>
       </div>
-      <GroupPic />;
     </div>
   );
 };
