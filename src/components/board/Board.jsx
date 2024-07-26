@@ -5,7 +5,7 @@ import Card from "@/components/board/Card";
 const Board = () => {
   return (
     <div className="w-5/6 mx-auto">
-      <div className="text-white text-6xl flex flex-col justify-center items-center my-[4%]">
+      <div className="flex flex-col justify-center items-center text-gardening-brown-100 font-black text-6xl my-[4%]">
         Meet the Team!
       </div>
       <div className="flex justify-center">
