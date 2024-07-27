@@ -1,11 +1,13 @@
 import WhyJoin from "./WhyJoin";
 import Link from "next/link";
+import Image from "next/image";
+import potPlant2 from "@/public/potPlant2.webp";
 
 const Join = () => {
   return (
     <div className="flex-col">
-      <div className="flex justify-around py-10">
-        <div className="w-2/5 flex flex-col">
+      <div className="flex justify-around pt-[5%]">
+        <div className="w-[60%] flex flex-col mx-[5%]">
           <p className="my-3 text-5xl font-bold">Join UCR Gardening!</p>
           <p className="my-2 text-2xl font-semibold">
             {
@@ -19,12 +21,18 @@ const Join = () => {
             JOIN NOW!
           </Link>
         </div>
-
-        <div className="w-[30%]">img here</div>
+        <div className="w-[40%] mr-[5%]">
+          <div className="w-full aspect-square rounded-lg sm:border-2 md:border-[3px] lg:border-4 border-gardening-brown-100 bg-gardening-tan-200" />
+          <Image
+            src={potPlant2}
+            alt="potPlant2"
+            className="w-[25%] -ml-[15%] -mt-[30%]"
+          />
+        </div>
       </div>
-
       <WhyJoin />
     </div>
   );
 };
+
 export default Join;
