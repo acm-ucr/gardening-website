@@ -1,0 +1,71 @@
+name: Deploy Next.js site to Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+        with:
+          static_site_generator: next
+
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            .next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+
+      - uses: acm-ucr/images@v2
+
+      - name: Install dependencies
+        run: npm i
+
+      - name: Build with Next.js
+        run: npm run build
+
+      - name: touch
+        run: touch ./.nojekyll
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./out
+    env:
+      NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY: ${{secrets.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}}
+      NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL: ${{secrets.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}}
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
