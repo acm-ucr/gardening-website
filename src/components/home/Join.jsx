@@ -9,7 +9,7 @@ const Join = () => {
       <div className="flex justify-around pt-[5%]">
         <div className="w-[60%] flex flex-col mx-[5%]">
           <p className="my-3 text-5xl font-bold">Join UCR Gardening!</p>
-          <p className="my-2 text-2xl font-semibold">
+          <p className="w-3/4 my-2 text-lg md:text-xl lg:text-2xl font-semibold">
             {
               "Get involved by Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             }
