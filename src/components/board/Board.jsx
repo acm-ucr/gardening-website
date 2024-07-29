@@ -1,10 +1,9 @@
-import GroupPic from "@/components/board/GroupPic";
-import Title from "@/components/board/Title";
+import GroupPic from "./GroupPic";
 
 const Board = () => {
   return (
     <div>
-      <Title />
+      Board
       <GroupPic />
     </div>
   );
