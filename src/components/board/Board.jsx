@@ -1,12 +1,13 @@
 "use client";
 import { BoardData } from "@/data/board.js";
 import Card from "@/components/board/Card";
+import GroupPic from "@/components/board/GroupPic";
+import Title from "@/components/board/Title";
+
 const Board = () => {
   return (
     <div className="w-5/6 mx-auto">
-      <div className="flex flex-col justify-center items-center text-gardening-brown-100 font-black text-6xl my-[4%]">
-        Meet the Team!
-      </div>
+      <Title />
       <div className="flex justify-center">
         <div className="grid grid-cols-4 grid-flow-row gap-x-36 gap-y-10">
           {BoardData.map((CARD, index) => (
@@ -21,6 +22,7 @@ const Board = () => {
           ))}
         </div>
       </div>
+      <GroupPic />
     </div>
   );
 };
