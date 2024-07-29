@@ -9,14 +9,14 @@ const Join = () => {
       <div className="flex justify-around pt-[5%]">
         <div className="w-[60%] flex flex-col mx-[5%]">
           <p className="my-3 text-5xl font-bold">Join UCR Gardening!</p>
-          <p className="my-2 text-2xl font-semibold">
+          <p className="w-3/4 my-2 text-lg md:text-xl lg:text-2xl font-semibold">
             {
               "Get involved by Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             }
           </p>
           <Link
             href="https://discord.com/invite/T2xVxxMtcx"
-            className="w-[50%] mt-5 pt-3 text-4xl font-bold text-center self-center border-2 border-black rounded-full"
+            className="w-[75%] md:w-[50%] mt-5 pt-3 text-2xl md:text-4xl font-bold text-center self-center border-2 border-black rounded-full"
           >
             JOIN NOW!
           </Link>
