@@ -42,42 +42,46 @@ const Footer = () => {
 
             <div className="flex flex-row mt-2 align-end">
               <FaInstagram className="mr-2" />
-              <a
+              <Link
+                target="_blank"
                 href="https://www.instagram.com/ucrgardening/?hl=en"
                 className="font-semibold text-lg"
               >
                 @ucrgardening
-              </a>
+              </Link>
             </div>
 
             <div className="flex flex-row mt-2 align-end">
               <IoMdMail className="mr-2" />
-              <a
+              <Link
+                target="_blank"
                 href="mailto:ucrgardening@gmail.com"
                 className="font-semibold text-lg"
               >
                 ucrgardening@gmail.com
-              </a>
+              </Link>
             </div>
 
             <div className="flex flex-row mt-2 align-end">
               <FaDiscord className="mr-2" />
-              <a
+              <Link
+                target="_blank"
                 href="https://discord.gg/rnsKpb8DfB"
                 className="font-semibold text-lg"
               >
                 Discord Channel
-              </a>
+              </Link>
             </div>
 
             <div className="flex flex-row mt-2 align-end">
               <FaLink className="mr-2" />
-              <a
-                href="https://highlanderlink.ucr.edu/organization/gardenclubn"
+              <Link
+                target="_blank"
+                href="https://highlanderlink.ucr.edu/organization/gardenclub"
                 className="font-semibold text-lg"
               >
                 Become a Member
-              </a>
+              </Link>
             </div>
           </div>
         </div>
