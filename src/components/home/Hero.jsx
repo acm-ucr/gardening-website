@@ -1,57 +1,13 @@
-import React from 'react';
+import React from "react";
 
 const Hero = () => {
   return (
-    <div style={styles.heroContainer}>
-      <div style={styles.leftSection}>
-        <h1 style={styles.welcomeText}>Welcome to</h1>
-        <h1 style={styles.mainTitle}>UCR Gardening!</h1>
-      </div>
-      <div style={styles.rightSection}>
-        {/* Placeholder for the content on the right side */}
-      </div>
+    <div className="flex items-center justify-end p-40 relative">
+      <div className="absolute right-0 w-[35%] h-full bg-gardening-red-200 rounded-l-full z-[-1]"></div>
+      <div className="absolute right-0 w-96 h-[90%] bg-gardening-red-100 rounded-l-full z-[-1]"></div>
+      <div className="md:w-[30vw] md:h-[30vw] w-[40vw] h-[40vw] bg-gardening-tan-200 border-[3px] p-4 border-gardening-brown-100 rounded-lg z-30"></div>
     </div>
   );
 };
 
-const styles = {
-  heroContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: '20px',
-    backgroundColor: '#fdf5e6', 
-  },
-  leftSection: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-start',
-  },
-  welcomeText: {
-    fontSize: '2rem',
-    color: '#4b4b4b',
-    marginBottom: '10px',
-  },
-  mainTitle: {
-    fontSize: '3rem',
-    fontWeight: 'bold',
-    color: '#6b4b3a',
-    marginLeft: '50px',
-  },
-  imageContainer: {
-    marginTop: '20px',
-  },
-  image: {
-    width: '200px', 
-    height: 'auto',
-  },
-  rightSection: {
-    width: '400px', 
-    height: '300px', 
-    backgroundColor: '#d3c4a1', 
-    borderRadius: '8px',
-    marginRight: '100px',
-  },
-};
 export default Hero;
