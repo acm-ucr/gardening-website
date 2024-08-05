@@ -26,13 +26,19 @@ const Navigation = () => {
       </Navbar.Brand>
 
       <Navbar.Collapse className="items-center md:justify-end justify-center">
-        <Nav className="w-full flex items-center gap-x-20 font-lg text-gardening-white-100 text-2xl">
-          <Link href="/board">Board</Link>
-          <Link href="/events">Calendar</Link>
-          <Link href="/gallery">Scrapbook</Link>
+        <Nav className="flex w-full text-gardening-white-100 text-xl flex-col font-black p-5 md:p-0 md:flex-row md:gap-x-8">
+          <Link href="/board" className="py-2 px-3">
+            Board
+          </Link>
+          <Link href="/events" className="py-2 px-3">
+            Calendar
+          </Link>
+          <Link href="/gallery" className="py-2 px-3">
+            Scrapbook
+          </Link>
           <Link
             href="/gallery"
-            className="bg-gardening-white-00 text-gardening-green-100 font-bold rounded-full pt-1 px-3"
+            className="py-2 px-5 bg-gardening-white-100 text-gardening-green-100 rounded-full"
           >
             Join Now
           </Link>
