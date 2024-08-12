@@ -1,0 +1,41 @@
+.rbc-header {
+  background-color: #d9b761;
+  color: black;
+  color: white;
+  font-weight: 500;
+  padding-top: 5px;
+}
+
+.rbc-day-bg {
+  background-color: white;
+}
+
+.rbc-header:first-child {
+  border-top-left-radius: 1rem; /* Rounds top-left corner */
+}
+
+.rbc-header:last-child {
+  border-top-right-radius: 1rem; /* Rounds top-right corner */
+}
+
+.rbc-month-row:last-child .rbc-day-bg:first-child {
+  border-bottom-left-radius: 1rem; /* Rounds bottom-left corner */
+}
+
+.rbc-month-view {
+  border-radius: 1rem;
+}
+
+.rbc-month-row:last-child .rbc-day-bg:last-child {
+  border-bottom-right-radius: 1rem; /* Rounds bottom-right corner */
+}
+
+.rbc-button-link {
+  display: none;
+}
+
+.rbc-event {
+  background-color: #c78e7c;
+  border-radius: 0;
+  margin-top: 0.5rem;
+}
