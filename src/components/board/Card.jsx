@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Card = ({ Name, Position, Year, image }) => {
   return (
-    <div className="bg-white w-56 h-80 rounded-lg mb-[4%] flex flex-col items-center">
+    <div className="bg-white w-32 h-52 md:w-36 md:h-52 lg:w-52 lg:h-72 rounded-lg mb-[4%] flex flex-col items-center  lg:-ml-10">
       <Image
         src={image}
         alt="boardPic"

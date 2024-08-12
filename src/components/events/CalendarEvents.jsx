@@ -32,7 +32,10 @@ const CalendarEvents = () => {
       <div className="mb-5 w-11/12 flex flex-col justify-center items-center">
         <div className="flex flex-row justify-start w-full">
           {" "}
-          <div className="text-7xl font-bold"> Calendar </div>
+          <p className="text-7xl font-bold text-gardening-brown-100">
+            {" "}
+            Calendar{" "}
+          </p>
         </div>
 
         <div className="h-[110vh] w-full relative">
