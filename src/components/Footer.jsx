@@ -20,8 +20,8 @@ const Footer = () => {
         </div>
 
         <div className="w-full md:w-[50%] flex flex-row mb-[3%] md:my-[2.5%]">
-          <div className="w-[50%] flex flex-col text-2xl lg:text-3xl xl:text-4xl ml-[15%] md:ml-0">
-            <p className="font-bold">About Us</p>
+          <div className="w-[50%] flex flex-col text-xl lg:text-3xl xl:text-4xl ml-[10%] md:ml-0">
+            <p className="font-bold whitespace-nowrap">About Us</p>
 
             <Link
               href="/board"
@@ -38,7 +38,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="w-[60%] flex flex-col text-2xl lg:text-3xl xl:text-4xl ml-[10%] mr-[5%]">
+          <div className="w-[60%] flex flex-col text-xl lg:text-3xl xl:text-4xl mr-[5%]">
             <p className="font-bold">Get in Touch</p>
 
             <div className="flex flex-row mt-2 align-end items-center">
