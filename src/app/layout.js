@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${karma.className} bg-gardening-tan-100 min-h-screen flex flex-col flex-auto justify-between`}
+        className={`${karma.className} bg-gardening-tan-100 min-h-screen flex flex-col flex-auto justify-between overflow-x-hidden`}
       >
         <Navigation />
         {children}
