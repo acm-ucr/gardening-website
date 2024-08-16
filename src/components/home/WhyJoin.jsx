@@ -6,22 +6,24 @@ const WhyJoin = () => {
         Why Join?
       </p>
 
+      {/* need to edit the text to fit properly for when the rectangles move */}
+
       <div className="w-5/6 flex justify-between mb-10 space-x-3">
-        <div className=" w-1/3 md:w-1/6 flex flex-col items-center justify-center rounded-full border-gardening-yellow-200 border-4 bg-gardening-tan-100 py-4">
-          <p className="text-4xl md:text-5xl font-bold text-gardening-yellow-200">
+        <div className=" w-1/3 lg:w-1/6 flex flex-col items-center justify-center rounded-full border-gardening-yellow-200 border-4 bg-gardening-tan-100 py-4">
+          <p className="text-7xl lg:text-5xl font-bold text-gardening-yellow-200">
             100+
           </p>
-          <p className="text-1xl md:text-2xl font-medium text-gardening-yellow-200">
+          <p className="text-3xl lg:text-2xl font-medium text-gardening-yellow-200">
             Workshops
           </p>
         </div>
 
-        <div className=" w-1/3 md:w-1/6 flex flex-col items-center justify-center rounded-full border-gardening-yellow-200 border-4 bg-gardening-tan-100 py-4">
-          <p className="text-4xl md:text-5xl font-bold text-gardening-yellow-200">
+        <div className=" w-1/3 sm:w-1/6 flex flex-col items-center justify-center rounded-full border-gardening-yellow-200 border-4 bg-gardening-tan-100 py-4">
+          <p className="text-4xl sm:text-5xl font-bold text-gardening-yellow-200">
             200+
           </p>
 
-          <p className="text-1xl md:text-2xl font-medium text-gardening-yellow-200">
+          <p className="text-1xl sm:text-2xl font-medium text-gardening-yellow-200">
             Members
           </p>
         </div>
