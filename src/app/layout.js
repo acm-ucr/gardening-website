@@ -1,5 +1,6 @@
 /* eslint-disable new-cap */
 import "./globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Karma } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
