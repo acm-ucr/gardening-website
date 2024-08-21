@@ -1,47 +1,80 @@
 "use client";
-import Link from "next/link";
-import Navbar from "react-bootstrap/Navbar";
-// import Image from "next/image";
+import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Link from "next/link";
+import { FaBars } from "react-icons/fa";
+
+const items = [
+  {
+    name: "ABOUT",
+    link: "about",
+  },
+  {
+    name: "TEAM",
+    link: "team",
+  },
+  {
+    name: "EVENTS",
+    link: "events",
+  },
+  {
+    name: "STAFF",
+    link: "staff",
+  },
+];
 
 const Navigation = () => {
+  const [selected, setSelected] = useState("");
   return (
-    <Navbar className="bg-gardening-green-100 p-5 flex justify-between items-center shadow-lg w-full">
+    <Navbar
+      collapseOnSelect
+      expand="md"
+      fixed="top"
+      className="w-full m-0 md:h-[8vh] p-0 flex px-3 py-1 !bg-black/50 justify-between items-center backdrop-blur-md"
+    >
       <Navbar.Brand>
         <Link
           onClick={() => setSelected("")}
           eventkey="1"
-          // className="p-0 flex items-center gap-2"
+          className="p-0 no-underline flex items-center gap-2"
           href="/"
         >
-          {/* <Image
-            className="flex justify-between w-auto object-left font-extrabold text-4xl text-gardening-tan-100"
-            src={logo}
-            alt="UCR Gardening"
-          /> */}
-          <p className="text-gardening-white-100 text-3xl font-black">
-            UCR Gardening
-          </p>
+          <p>UCR Gardening</p>
         </Link>
       </Navbar.Brand>
 
-      <Navbar.Collapse className="items-center md:justify-end justify-center">
-        <Nav className="flex w-full text-gardening-white-100 text-xl flex-col font-black p-5 md:p-0 md:flex-row md:gap-x-8">
-          <Link href="/board" className="py-2 px-3">
-            Board
-          </Link>
-          <Link href="/events" className="py-2 px-3">
-            Calendar
-          </Link>
-          <Link href="/gallery" className="py-2 px-3">
-            Scrapbook
-          </Link>
-          <Link
-            href="/gallery"
-            className="py-2 px-5 bg-gardening-white-100 text-gardening-green-100 rounded-full"
-          >
-            Join Now
-          </Link>
+      <Navbar.Toggle
+        className="list-unstyled !text-transparent border-0"
+        aria-controls="basic-navbar-nav"
+      >
+        <FaBars className=" text-white text-xl" />
+      </Navbar.Toggle>
+
+      <Navbar.Collapse className="items-center md:justify-end justify-center ">
+        <Nav className=" w-12/12 flex items-center ">
+          {items.map((item, index) => (
+            <Nav.Link
+              as={Link}
+              key={index}
+              href={item.link}
+              onClick={() => setSelected(item.name)}
+              className="hover:cursor-pointer -mb-1 px-4 !text-hlg-white whitespace-nowrap transform transition duration-500 ease-in-out hover:scale-105 "
+            >
+              <div className="flex-col items-center">
+                <div>{item.name}</div>
+                <div className="flex justify-center">
+                  <div
+                    className={
+                      selected === item.name
+                        ? " bg-hlg-yellow p-1 rounded-full"
+                        : "p-1"
+                    }
+                  ></div>
+                </div>
+              </div>
+            </Nav.Link>
+          ))}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
