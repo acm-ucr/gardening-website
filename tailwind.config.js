@@ -24,6 +24,7 @@ module.exports = {
           "brown-200": "#83694D",
           "brown-300": "#977761",
           "brown-400": "#AF907A",
+          "brown-500": "#5E534D",
         },
       },
     },
