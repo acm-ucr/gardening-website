@@ -7,45 +7,45 @@ import { FaBars } from "react-icons/fa";
 
 const items = [
   {
-    name: "ABOUT",
-    link: "about",
+    name: "Board",
+    link: "board",
   },
   {
-    name: "TEAM",
-    link: "team",
-  },
-  {
-    name: "EVENTS",
+    name: "Calendar",
     link: "events",
   },
   {
-    name: "STAFF",
-    link: "staff",
+    name: "Scrapbook",
+    link: "gallery",
+  },
+  {
+    name: "Join Now",
+    link: "/",
   },
 ];
 
 const Navigation = () => {
-  const [selected, setSelected] = useState("");
+  const [setSelected] = useState("");
   return (
     <Navbar
       collapseOnSelect
       expand="md"
       fixed="top"
-      className="w-full m-0 md:h-[8vh] p-0 flex px-3 py-1 !bg-black/50 justify-between items-center backdrop-blur-md"
+      className="w-full flex px-4 py-2 justify-between items-center bg-gardening-green-100"
     >
       <Navbar.Brand>
         <Link
           onClick={() => setSelected("")}
           eventkey="1"
-          className="p-0 no-underline flex items-center gap-2"
+          className=" text-gardening-tan-100 text-3xl no-underline font-black"
           href="/"
         >
-          <p>UCR Gardening</p>
+          <p className=" mt-4">UCR Gardening</p>
         </Link>
       </Navbar.Brand>
 
       <Navbar.Toggle
-        className="list-unstyled !text-transparent border-0"
+        className="!text-transparent border-0"
         aria-controls="basic-navbar-nav"
       >
         <FaBars className=" text-white text-xl" />
@@ -59,19 +59,20 @@ const Navigation = () => {
               key={index}
               href={item.link}
               onClick={() => setSelected(item.name)}
-              className="hover:cursor-pointer -mb-1 px-4 !text-hlg-white whitespace-nowrap transform transition duration-500 ease-in-out hover:scale-105 "
+              className="-mb-1 px-4"
             >
               <div className="flex-col items-center">
-                <div>{item.name}</div>
-                <div className="flex justify-center">
-                  <div
-                    className={
-                      selected === item.name
-                        ? " bg-hlg-yellow p-1 rounded-full"
-                        : "p-1"
-                    }
-                  ></div>
-                </div>
+                {item.name === "Join Now" ? (
+                  <div className="bg-gardening-tan-100 px-3 py-2 rounded-full text-gardening-green-100">
+                    <div className="text-gardening-green-100 font-black text-xl">
+                      {item.name}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="text-gardening-tan-100 font-black text-xl">
+                    {item.name}
+                  </div>
+                )}
               </div>
             </Nav.Link>
           ))}
