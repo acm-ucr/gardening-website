@@ -24,14 +24,14 @@ const Footer = () => {
 
             <Link
               href="/board"
-              className="mt-2 font-semibold text-sm sm:text-lg"
+              className="mt-2 font-semibold text-sm sm:text-lg hover:text-blue-200"
             >
               OUR BOARD
             </Link>
 
             <Link
               href="/events"
-              className="mt-2 font-semibold text-sm sm:text-lg"
+              className="mt-2 font-semibold text-sm sm:text-lg hover:text-blue-200"
             >
               EVENTS
             </Link>
@@ -40,7 +40,7 @@ const Footer = () => {
           <div className="flex flex-col">
             <p className="font-bold">Get in Touch</p>
 
-            <div className="flex flex-row mt-2 align-end">
+            <div className="flex flex-row mt-2 align-end hover:text-blue-200">
               <FaInstagram className="mr-2" />
               <Link
                 target="_blank"
@@ -51,7 +51,7 @@ const Footer = () => {
               </Link>
             </div>
 
-            <div className="flex flex-row mt-2 align-end">
+            <div className="flex flex-row mt-2 align-end hover:text-blue-200">
               <IoMdMail className="mr-2" />
               <Link
                 target="_blank"
@@ -62,18 +62,18 @@ const Footer = () => {
               </Link>
             </div>
 
-            <div className="flex flex-row mt-2 align-end">
+            <div className="flex flex-row mt-2 align-end hover:text-blue-200">
               <FaDiscord className="mr-2" />
               <Link
                 target="_blank"
                 href="https://discord.gg/rnsKpb8DfB"
-                className="font-semibold text-lg"
+                className="font-semibold text-lg "
               >
                 Discord Channel
               </Link>
             </div>
 
-            <div className="flex flex-row mt-2 align-end">
+            <div className="flex flex-row mt-2 align-end hover:text-blue-200">
               <FaLink className="mr-2" />
               <Link
                 target="_blank"
