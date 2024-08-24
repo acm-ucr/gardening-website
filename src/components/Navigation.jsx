@@ -34,7 +34,6 @@ const Navigation = () => {
     <Navbar
       collapseOnSelect
       expand="md"
-      fixed="top"
       className="w-full flex px-4 py-2 justify-between items-center bg-gardening-green-100"
     >
       <Navbar.Brand>
