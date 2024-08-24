@@ -24,8 +24,9 @@ const CustomToolbar = (event) => {
         }}
         className="hover:cursor-pointer hover:opacity-50 duration-300 text-4xl"
       />
-      <p className="text-swim-blue-200">{monthNames[event.date.getMonth()]}</p>
-      <p className="text-swim-blue-200"> {event.date.getFullYear()}</p>
+      <p className="text-swim-blue-200">
+        {monthNames[event.date.getMonth()]} {event.date.getFullYear()}
+      </p>
       <BsArrowRight
         onClick={() => {
           event.onNavigate("NEXT");
