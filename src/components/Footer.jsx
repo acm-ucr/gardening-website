@@ -25,14 +25,14 @@ const Footer = () => {
 
             <Link
               href="/board"
-              className="mt-[5%] md:font-semibold text-sm md:text-base lg:text-xl xl:text-2xl"
+              className="mt-2 font-semibold text-sm sm:text-lg hover:text-blue-200"
             >
               OUR BOARD
             </Link>
 
             <Link
               href="/events"
-              className="mt-[5%] md:font-semibold text-sm md:text-base lg:text-xl xl:text-2xl"
+              className="mt-2 font-semibold text-sm sm:text-lg hover:text-blue-200"
             >
               EVENTS
             </Link>
@@ -41,7 +41,7 @@ const Footer = () => {
           <div className="w-[60%] flex flex-col text-xl lg:text-3xl xl:text-4xl mr-[5%]">
             <p className="font-bold">Get in Touch</p>
 
-            <div className="flex flex-row mt-2 align-end items-center">
+            <div className="flex flex-row mt-2 align-end hover:text-blue-200">
               <FaInstagram className="mr-2" />
               <Link
                 target="_blank"
@@ -52,7 +52,7 @@ const Footer = () => {
               </Link>
             </div>
 
-            <div className="flex flex-row mt-2 align-end items-center">
+            <div className="flex flex-row mt-2 align-end hover:text-blue-200">
               <IoMdMail className="mr-2" />
               <Link
                 target="_blank"
@@ -63,18 +63,18 @@ const Footer = () => {
               </Link>
             </div>
 
-            <div className="flex flex-row mt-2 align-end items-center">
+            <div className="flex flex-row mt-2 align-end hover:text-blue-200">
               <FaDiscord className="mr-2" />
               <Link
                 target="_blank"
                 href="https://discord.gg/rnsKpb8DfB"
-                className="lg:font-semibold text-base md:text-base lg:text-xl xl:text-2xl"
+                className="font-semibold text-lg "
               >
                 Discord Channel
               </Link>
             </div>
 
-            <div className="flex flex-row mt-2 align-end items-center">
+            <div className="flex flex-row mt-2 align-end hover:text-blue-200">
               <FaLink className="mr-2" />
               <Link
                 target="_blank"
