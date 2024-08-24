@@ -2,14 +2,18 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="flex items-center justify-between p-40 relative">
-      <div className="text-5xl font-semibold text-gardening-brown-100">
-        <p>Welcome to</p>
-        <p className="ml-[15%] text-7xl font-black">UCR GARDENING!</p>
+    <div className="relative py-20 flex justify-around">
+      <div className="my-auto">
+        <p className="text-2xl md:text-6xl font-black">Welcome to</p>
+        <div className="text-4xl md:text-8xl text-gardening-brown-100 font-black ml-[30%] md:ml-[13%]">
+          <p>UCR</p>
+          <p>Gardening!</p>
+        </div>
       </div>
-      <div className="absolute right-0 w-[35%] h-full bg-gardening-red-200 rounded-l-full z-[-1]"></div>
-      <div className="absolute right-0 w-96 h-[90%] bg-gardening-red-100 rounded-l-full z-[-1]"></div>
-      <div className="md:w-[30vw] md:h-[30vw] w-[40vw] h-[40vw] bg-gardening-tan-200 border-[3px] p-4 border-gardening-brown-100 rounded-lg z-30"></div>
+
+      <div className="w-2/5 h-[30vw] border-[2px] rounded-lg border-gardening-brown-100 bg-gardening-tan-200"></div>
+
+      <div className="w-2/5 h-[100%] -mt-20 bg-gardening-red-100 border-gardening-red-200 border-l-[20px] border-y-[20px] rounded-l-full absolute right-0 z-[-1]" />
     </div>
   );
 };
