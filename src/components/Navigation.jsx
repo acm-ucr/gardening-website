@@ -9,18 +9,22 @@ const items = [
   {
     name: "Board",
     link: "board",
+    target: "_self",
   },
   {
     name: "Calendar",
     link: "events",
+    target: "_self",
   },
   {
     name: "Scrapbook",
     link: "gallery",
+    target: "_self",
   },
   {
     name: "Join Now",
-    link: "/",
+    link: "https://discord.com/invite/T2xVxxMtcx",
+    target: "_blank",
   },
 ];
 
@@ -37,7 +41,7 @@ const Navigation = () => {
         <Link
           onClick={() => setSelected("")}
           eventkey="1"
-          className=" text-gardening-tan-100 text-3xl no-underline font-black"
+          className="text-gardening-tan-100 text-3xl no-underline font-black"
           href="/"
         >
           <p className=" mt-4">UCR Gardening</p>
@@ -52,12 +56,13 @@ const Navigation = () => {
       </Navbar.Toggle>
 
       <Navbar.Collapse className="items-center md:justify-end justify-center ">
-        <Nav className=" w-12/12 flex items-center ">
+        <Nav className="w-12/12 flex items-center ">
           {items.map((item, index) => (
             <Nav.Link
               as={Link}
               key={index}
               href={item.link}
+              target={item.target}
               onClick={() => setSelected(item.name)}
               className="-mb-1 px-4"
             >
