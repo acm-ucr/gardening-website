@@ -1,41 +1,86 @@
 "use client";
-import Link from "next/link";
-import Navbar from "react-bootstrap/Navbar";
-// import Image from "next/image";
+import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Link from "next/link";
+import { FaBars } from "react-icons/fa";
+
+const items = [
+  {
+    name: "Board",
+    link: "board",
+    target: "_self",
+  },
+  {
+    name: "Calendar",
+    link: "events",
+    target: "_self",
+  },
+  {
+    name: "Scrapbook",
+    link: "gallery",
+    target: "_self",
+  },
+  {
+    name: "Join Now",
+    link: "https://discord.com/invite/T2xVxxMtcx",
+    target: "_blank",
+  },
+];
 
 const Navigation = () => {
+  const [setSelected] = useState("");
   return (
-    <Navbar className="bg-gardening-green-100 p-5 flex justify-between items-center shadow-lg w-full">
+    <Navbar
+      collapseOnSelect
+      expand="md"
+      fixed="top"
+      className="w-full flex px-4 py-2 justify-between items-center bg-gardening-green-100"
+    >
       <Navbar.Brand>
         <Link
           onClick={() => setSelected("")}
           eventkey="1"
-          // className="p-0 flex items-center gap-2"
+          className="text-gardening-tan-100 text-3xl no-underline font-black"
           href="/"
         >
-          {/* <Image
-            className="flex justify-between w-auto object-left font-extrabold text-4xl text-gardening-tan-100"
-            src={logo}
-            alt="UCR Gardening"
-          /> */}
-          <p className="text-gardening-white-100 text-3xl font-black">
-            UCR Gardening
-          </p>
+          <p className=" mt-4">UCR Gardening</p>
         </Link>
       </Navbar.Brand>
 
-      <Navbar.Collapse className="items-center md:justify-end justify-center">
-        <Nav className="w-full flex items-center gap-x-20 font-lg text-gardening-white-100 text-2xl">
-          <Link href="/board">Board</Link>
-          <Link href="/events">Calendar</Link>
-          <Link href="/gallery">Scrapbook</Link>
-          <Link
-            href="/gallery"
-            className="bg-gardening-white-00 text-gardening-green-100 font-bold rounded-full pt-1 px-3"
-          >
-            Join Now
-          </Link>
+      <Navbar.Toggle
+        className="!text-transparent border-0"
+        aria-controls="basic-navbar-nav"
+      >
+        <FaBars className=" text-white text-xl" />
+      </Navbar.Toggle>
+
+      <Navbar.Collapse className="items-center md:justify-end justify-center ">
+        <Nav className="w-12/12 flex items-center ">
+          {items.map((item, index) => (
+            <Nav.Link
+              as={Link}
+              key={index}
+              href={item.link}
+              target={item.target}
+              onClick={() => setSelected(item.name)}
+              className="-mb-1 px-4"
+            >
+              <div className="flex-col items-center">
+                {item.name === "Join Now" ? (
+                  <div className="bg-gardening-tan-100 px-3 py-2 rounded-full text-gardening-green-100">
+                    <div className="text-gardening-green-100 font-black text-xl">
+                      {item.name}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="text-gardening-tan-100 font-black text-xl">
+                    {item.name}
+                  </div>
+                )}
+              </div>
+            </Nav.Link>
+          ))}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
