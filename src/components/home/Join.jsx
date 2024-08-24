@@ -31,7 +31,7 @@ const Join = () => {
             <Link
               href="https://discord.com/invite/T2xVxxMtcx"
               target="_blank"
-              className="w-[50%] md:w-[60%] mt-5 pt-5 pb-3 text-2xl md:text-5xl font-bold text-center self-center border-2 border-black rounded-full"
+              className="w-[50%] md:w-[60%] mt-5 pt-6 pb-3 text-2xl md:text-5xl font-bold text-center self-center border-2 border-gardening-brown-100 rounded-full transition hover:text-white hover:bg-gardening-brown-100 hover:duration-300 ease-in-out"
             >
               JOIN NOW!
             </Link>
