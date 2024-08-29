@@ -1,4 +1,5 @@
 "use client";
+import { EventData } from "@/data/event.js";
 import React from "react";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
