@@ -1,7 +1,7 @@
 const Values = () => {
   return (
     <div className="w-full flex flex-col  items-center bg-gardening-green-100 py-10">
-      <p className="text-4xl sm:text-5xl font-bold text-gardening-white-100 mt-3 sm:mt-5 mb-6 sm:mb-10">
+      <p className="text-4xl items-center sm:text-5xl font-bold text-gardening-white-100 mt-3 sm:mt-5 mb-6 sm:mb-10">
         Our Values and Mission
       </p>
 
