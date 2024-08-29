@@ -56,7 +56,7 @@ const CalendarEvents = () => {
         // const offset = new Date().getTimezoneOffset() * 60000;
         const data = await response.json();
 
-        // console.log("finding all day", data);
+        console.log("finding all day", data);
         // const tmp1 = data.items[10];
         //   console.log("hahhhh", tmp1);
         //   console.log("title", tmp1.summary);
@@ -83,7 +83,7 @@ const CalendarEvents = () => {
         // 2. Provide default description. If none is given.
 
         for (let i = 0; i < arr.length; i++) {
-          // let tmp4 = arr[i];
+          const tmp4 = arr[i];
 
           // console.log(tmp4.summary, tmp4.description, tmp4.start, new Date(tmp4.end), new Date(tmp4.location));
           const temp = {
