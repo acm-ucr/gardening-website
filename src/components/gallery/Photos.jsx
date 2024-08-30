@@ -8,7 +8,7 @@ const Photos = () => {
         Scrapbook
       </p>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
         {Array.from({ length: 9 }).map((_, index) => (
           <div key={index} className="w-full">
             <Image
