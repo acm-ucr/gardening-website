@@ -43,7 +43,7 @@ const Navigation = () => {
           className="text-gardening-tan-100 text-3xl no-underline font-black"
           href="/"
         >
-          <p className=" mt-4">UCR Gardening</p>
+          <p className="mt-3">UCR Gardening</p>
         </Link>
       </Navbar.Brand>
 
@@ -54,7 +54,7 @@ const Navigation = () => {
         <FaBars className=" text-white text-xl" />
       </Navbar.Toggle>
 
-      <Navbar.Collapse className="items-center md:justify-end justify-center ">
+      <Navbar.Collapse className="flex items-center md:justify-end justify-center ">
         <Nav className="w-12/12 flex items-center ">
           {items.map((item, index) => (
             <Nav.Link
@@ -63,7 +63,7 @@ const Navigation = () => {
               href={item.link}
               target={item.target}
               onClick={() => setSelected(item.name)}
-              className="-mb-1 px-4"
+              className="py-2 px-4"
             >
               <div className="flex-col items-center">
                 {item.name === "Join Now" ? (
