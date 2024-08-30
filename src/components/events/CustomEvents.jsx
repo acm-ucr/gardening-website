@@ -10,10 +10,9 @@ const CustomEvents = (inEvent) => {
   //   summary: "even better event",
   // },
 
-  console.log(inEvent);
   return (
-    <div className="bg-gardening-red-100 w-full h-full text-center">
-      <p className="text-base">{inEvent.event.title}</p>
+    <div className="bg-gardening-brown-400 text-center pt-0.5 pb-1">
+      <p className="text-sm -mb-1 text-wrap">{inEvent.event.title} </p>
     </div>
   );
 };
