@@ -3,16 +3,18 @@ import placeholder from "@/public/catOrangeGardening.webp";
 
 const Photos = () => {
   return (
-    <div className="p-16">
-      <p className="text-gardening-brown-100 text-6xl font-black">Scrapbook</p>
+    <div className="p-[3%]">
+      <p className="text-gardening-brown-100 text-6xl font-black pl-[2%] pt-[2%]">
+        Scrapbook
+      </p>
 
-      <div className="grid grid-cols-3 gap-y-12 justify-items-center py-7">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
         {Array.from({ length: 9 }).map((_, index) => (
-          <div key={index} className="w-full py-1 px-4">
+          <div key={index} className="w-full">
             <Image
               src={placeholder}
               alt={`Gallery image ${index + 1}`}
-              className="w-11/12"
+              className="w-[95%] pl-[5%] py-[5%]"
             />
           </div>
         ))}
