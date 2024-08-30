@@ -119,13 +119,14 @@ const CalendarEvents = () => {
 
   return (
     <section className="w-full flex justify-center items-center flex-col">
-      <div className="mb-5 w-11/12 flex flex-col justify-center items-center">
+      <div className="mb-5 w-11/12 flex flex-col justify-center items-center relative">
         <div className="flex flex-row justify-start w-full">
-          {" "}
-          <div className="text-7xl font-bold"> Calendar </div>
+          <div className="text-7xl font-bold text-gardening-brown-100">
+            Calendar
+          </div>
         </div>
 
-        <div className="h-[110vh] w-full relative">
+        <div className="h-[90vh] w-full relative">
           <Calendar
             className="w-full m-0 p-0 text-3xl"
             date={date}

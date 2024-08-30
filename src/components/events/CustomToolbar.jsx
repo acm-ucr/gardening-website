@@ -24,7 +24,7 @@ const CustomToolbar = (event) => {
         }}
         className="hover:cursor-pointer hover:opacity-50 duration-300 text-4xl"
       />
-      <p className="text-swim-blue-200">
+      <p className="m-0">
         {monthNames[event.date.getMonth()]} {event.date.getFullYear()}
       </p>
       <BsArrowRight

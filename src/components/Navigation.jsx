@@ -11,7 +11,7 @@ const items = [
     target: "_self",
   },
   {
-    name: "Calendar",
+    name: "Events",
     link: "events",
     target: "_self",
   },
