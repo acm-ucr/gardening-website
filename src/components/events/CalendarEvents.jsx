@@ -52,61 +52,26 @@ const CalendarEvents = () => {
           `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}
           &singleEvents=true&orderBy=startTime&timeMin=${startDate}&timeMax=${endDate}`
         );
-
-        // const offset = new Date().getTimezoneOffset() * 60000;
         const data = await response.json();
 
         console.log("finding all day", data);
-        // const tmp1 = data.items[10];
-        //   console.log("hahhhh", tmp1);
-        //   console.log("title", tmp1.summary);
-        //   console.log("description", tmp1.description);
-        //   console.log("start time", tmp1.start);
-        //   console.log("end time", tmp1.end);
-        //   console.log("location", tmp1.location);
-
-        //   const tmp2 = data.items[6];
-        //   console.log("start time 6", tmp2.start);
-        //   console.log("end time 6", tmp2.end);
-
-        //   const t1= new Date(tmp1.start.dateTime);
-
-        //   const t2 = new Date(tmp2.start.date);
-
-        //   console.log("edited times, both working", t1, t2);
 
         const arr = data.items;
         const items = [];
 
-        // What to do now:
-        // 1. Two different format for all day event vs non all day event. Handle them differently.
-        // 2. Provide default description. If none is given.
-
         for (let i = 0; i < arr.length; i++) {
           const tmp4 = arr[i];
-
-          // console.log(tmp4.summary, tmp4.description, tmp4.start, new Date(tmp4.end), new Date(tmp4.location));
           const temp = {
             title: tmp4.summary,
-            description:
-              tmp4.description !== undefined
-                ? tmp4.description
-                : "no description",
+            description: tmp4.description,
             start: new Date(tmp4.start.date || tmp4.start.dateTime),
             end: new Date(tmp4.end.date || tmp4.end.dateTime),
+            location: tmp4.location,
           };
           items.push(temp);
         }
 
         console.log("final event list", items);
-
-        // {
-        //   title: "Event 1",
-        //   start: new Date(2024, 7, 20, 10, 0),
-        //   end: new Date(2024, 7, 21, 11, 0),
-        //
-        //   summary: "even better event",
-        // },
 
         setEvents(items);
       } catch (error) {
@@ -120,12 +85,6 @@ const CalendarEvents = () => {
   return (
     <section className="w-full flex justify-center items-center flex-col">
       <div className="mb-5 w-11/12 flex flex-col justify-center items-center relative">
-        <div className="flex flex-row justify-start w-full">
-          <div className="text-7xl font-bold text-gardening-brown-100">
-            Calendar
-          </div>
-        </div>
-
         <div className="h-[90vh] w-full relative">
           <Calendar
             className="w-full m-0 p-0 text-3xl"
