@@ -13,7 +13,7 @@ const karma = Karma({
 });
 
 export const metadata = {
-  title: "Gardening Club",
+  title: "UCR Gardening Club",
   description:
     "We are a student-led club at UC Riverside focused on sustainability, food security, & community gardening!",
 };
