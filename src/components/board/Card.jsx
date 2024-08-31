@@ -3,15 +3,17 @@ import Image from "next/image";
 
 const Card = ({ Name, Position, Year, image }) => {
   return (
-    <div className="bg-white w-32 h-52 md:w-36 md:h-52 lg:w-52 lg:h-72 rounded-lg mb-[4%] flex flex-col items-center  lg:-ml-10">
+    <div className="bg-white w-32 md:w-36 lg:w-52 rounded-lg mb-[4%] flex flex-col items-center  lg:-ml-10">
       <Image
         src={image}
         alt="boardPic"
-        className="w-[90%] h-[66%] rounded-lg my-[6%]"
+        className="w-[90%] h-[66%] rounded-lg my-[6%] object-cover"
       />
-      <div className="font-extrabold"> {Name} </div>
-      <div className="font-extrabold"> {Position} </div>
-      <div className="font-extrabold"> {Year} </div>
+      <div className="font-extrabold text-center mb-[6%]">
+        <p className="m-0"> {Name} </p>
+        <p className="m-0"> {Position} </p>
+        <p className="m-0"> {Year} </p>
+      </div>
     </div>
   );
 };
