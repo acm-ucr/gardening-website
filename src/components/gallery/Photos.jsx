@@ -1,5 +1,5 @@
 import Image from "next/image";
-import placeholder from "@/public/catOrangeGardening.webp";
+import { Scrapbook } from "@/data/scrapbook";
 
 const Photos = () => {
   return (
@@ -9,12 +9,15 @@ const Photos = () => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
-        {Array.from({ length: 9 }).map((_, index) => (
-          <div key={index} className="w-full">
+        {Scrapbook.map((imgSrc, index) => (
+          <div
+            key={index}
+            className="w-[95%] h-[300px] my-3 overflow-hidden flex items-center justify-center"
+          >
             <Image
-              src={placeholder}
+              src={imgSrc}
               alt={`Gallery image ${index + 1}`}
-              className="w-[95%] pl-[5%] py-[5%]"
+              className="object-cover w-full h-full"
             />
           </div>
         ))}
