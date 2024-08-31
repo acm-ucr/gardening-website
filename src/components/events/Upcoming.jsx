@@ -25,18 +25,24 @@ const Upcoming = ({ events }) => {
       <p className="font-bold text-5xl lg:text-7xl">Upcoming Events</p>
 
       <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-around gap-4">
-        {eventsToShow.map((event, index) => (
-          <EventCard
-            Month={event.start.toLocaleString("en-US", { month: "short" })}
-            Day={event.start.getDate()}
-            Time={event.start.toLocaleTimeString("en-US")}
-            EventName={event.title}
-            Location={event.location}
-            Description={event.description}
-            key={index}
-            custom={index * 0.1}
-          />
-        ))}
+        {eventsToShow.length > 0 ? (
+          eventsToShow.map((event, index) => (
+            <EventCard
+              Month={event.start.toLocaleString("en-US", { month: "short" })}
+              Day={event.start.getDate()}
+              Time={event.start.toLocaleTimeString("en-US")}
+              EventName={event.title}
+              Location={event.location}
+              Description={event.description}
+              key={index}
+              custom={index * 0.1}
+            />
+          ))
+        ) : (
+          <p className="w-[70%] m-0 text-xl md:text-3xl text-center font-semibold">
+            {"No events sprouting yet, but we'll be planting new ideas soon!"}
+          </p>
+        )}
       </div>
     </div>
   );
