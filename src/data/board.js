@@ -1,52 +1,56 @@
-import cat from "@/public/catOrangeGardening.webp";
+import cat from "@/public/cat.webp";
+import Chami from "@/public/board/Chami_Lifula.webp";
+import Jaylene from "@/public/board/Jaylene_Cardona.webp";
+import Minal from "@/public/board/Minal_Walvekar.webp";
+import Uditi from "@/public/board/Uditi_Desai.webp";
 
 export const BoardData = [
   {
-    Name: "1 name",
-    Position: "1 position",
-    Year: "1 year",
+    Name: "Hana Baig",
+    Position: "President",
+    Year: "4th year",
     image: cat,
   },
   {
-    Name: "2 name",
-    Position: "2 position",
-    Year: "2 year",
+    Name: "Uditi Desai",
+    Position: "Vice President",
+    Year: "3rd year",
+    image: Uditi,
+  },
+  {
+    Name: "Chami Lifula",
+    Position: "Secretary",
+    Year: "3rd year",
+    image: Chami,
+  },
+  {
+    Name: "Jaylene Cardona",
+    Position: "Treasurer",
+    Year: "3rd year",
+    image: Jaylene,
+  },
+  {
+    Name: "Andrew Tseng",
+    Position: "Community Outreach Coordinator",
+    Year: "4th year",
     image: cat,
   },
   {
-    Name: "3 name",
-    Position: "3 position",
-    Year: "3 year",
+    Name: "Alexis Leonardo",
+    Position: "Social Media Coordinator",
+    Year: "3rd year",
     image: cat,
   },
   {
-    Name: "4 name",
-    Position: "4 position",
-    Year: "4 year",
-    image: cat,
+    Name: "Minal Walvekar",
+    Position: "Social Media Coordinator",
+    Year: "4th year",
+    image: Minal,
   },
   {
-    Name: "5 name",
-    Position: "5 position",
-    Year: " 5year",
-    image: cat,
-  },
-  {
-    Name: "6 name",
-    Position: "6 position",
-    Year: "6 year",
-    image: cat,
-  },
-  {
-    Name: "7 name",
-    Position: "7 position",
-    Year: "7 year",
-    image: cat,
-  },
-  {
-    Name: "8 name",
-    Position: "8 position",
-    Year: "8 year",
+    Name: "Brian Hornor",
+    Position: "Historian",
+    Year: "3rd year",
     image: cat,
   },
 ];
