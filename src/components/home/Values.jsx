@@ -3,7 +3,7 @@ import { BoardData } from "@/data/values";
 const Values = () => {
   return (
     <div className="w-full flex flex-col items-center bg-gardening-green-100 py-10">
-      <p className="m-0 text-4xl text-center sm:text-5xl font-bold text-gardening-white-100">
+      <p className="m-0 text-4xl  text-center sm:text-5xl font-bold text-gardening-white-100">
         Our Values and Mission
       </p>
 
