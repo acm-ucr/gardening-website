@@ -1,4 +1,4 @@
-import cat from "@/public/cat.webp";
+import cat from "@/public/Cat.webp";
 import Chami from "@/public/board/Chami_Lifula.webp";
 import Jaylene from "@/public/board/Jaylene_Cardona.webp";
 import Minal from "@/public/board/Minal_Walvekar.webp";
