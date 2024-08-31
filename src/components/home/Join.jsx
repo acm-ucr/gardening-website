@@ -2,14 +2,21 @@ import WhyJoin from "./WhyJoin";
 import Link from "next/link";
 import Image from "next/image";
 import potPlant2 from "@/public/assets/potPlant2.webp";
+import join from "@/public/join.webp";
 
 const Join = () => {
   return (
     <>
       <div className="w-full py-10 flex flex-col sm:flex-row justify-around items-center sm:flex-row-reverse">
         <div className="w-full sm:w-2/5">
-          <div className="w-[60%] sm:w-[90%] lg:w-[65%] mx-auto">
-            <div className="w-full aspect-square rounded-lg border-2 border-gardening-brown-100 bg-gardening-tan-200" />
+          <div className="w-[60%] sm:w-[90%] lg:w-[70%] ml-auto mr-auto sm:ml-0 sm:mr-auto">
+            <div className="w-full aspect-square rounded-lg border-2 border-gardening-brown-100 bg-gardening-tan-200 overflow-hidden">
+              <Image
+                src={join}
+                alt="group photo"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <Image
               src={potPlant2}
               alt="potPlant2"
@@ -19,7 +26,7 @@ const Join = () => {
         </div>
 
         <div className="w-4/5 sm:w-[45%] flex flex-col items-center sm:items-start">
-          <p className="text-4xl mt-4 mb-0 sm:text-4xl md:text-6xl font-bold">
+          <p className="text-4xl sm:text-5xl mt-4 mb-0 font-bold">
             Join UCR Gardening!
           </p>
           <p className="w-4/5 my-3 mb-4 text-lg sm:text-xl font-semibold">
