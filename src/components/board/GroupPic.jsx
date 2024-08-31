@@ -1,7 +1,7 @@
 import Image from "next/image";
-import lamp1 from "@/public/lamp1.webp";
-import leaves1 from "@/public/leaves1.webp";
-import leaves2 from "@/public/leaves2.webp";
+import lamp1 from "@/public/assets/lamp1.webp";
+import leaves1 from "@/public/assets/leaves1.webp";
+import leaves2 from "@/public/assets/leaves2.webp";
 import Board from "@/public/board/Board.webp";
 
 const GroupPic = () => {

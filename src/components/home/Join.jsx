@@ -1,7 +1,7 @@
 import WhyJoin from "./WhyJoin";
 import Link from "next/link";
 import Image from "next/image";
-import potPlant2 from "@/public/potPlant2.webp";
+import potPlant2 from "@/public/assets/potPlant2.webp";
 
 const Join = () => {
   return (
