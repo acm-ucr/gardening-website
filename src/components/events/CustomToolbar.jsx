@@ -28,9 +28,7 @@ const CustomToolbar = (event) => {
           }}
           className="hover:cursor-pointer hover:opacity-50 duration-300 text-4xl"
         />
-        <span className="inline-block align-baseline">
-          {monthNames[event.date.getMonth()]} {event.date.getFullYear()}
-        </span>
+        {monthNames[event.date.getMonth()]} {event.date.getFullYear()}
         <BsArrowRight
           onClick={() => {
             event.onNavigate("NEXT");
