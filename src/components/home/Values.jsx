@@ -30,7 +30,7 @@ const Values = () => {
         </div>
         <div className="flex flex-col items-center mx-4 mb-6">
           <div className="bg-gardening-white-100 w-30 h-35 p-4 rounded-lg shadow-md transform -rotate-12 mb-4 flex flex-col items-center">
-            <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gardening-red-200 rounded mb-2"></div>
+            <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gardening-red-200 mb-2"></div>
             <p className="text-lg sm:text-xl font-semibold text-gardening-brown-500">
               Seeds
             </p>

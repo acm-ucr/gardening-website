@@ -1,5 +1,4 @@
 "use client";
-import { EventData } from "@/data/event.js";
 import React from "react";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
@@ -10,6 +9,7 @@ import CustomToolbar from "./CustomToolbar";
 import CustomEvents from "./CustomEvents";
 import CustomEventWrapper from "./CustomEventWrapper";
 import Modal from "./Modals";
+import Upcoming from "./Upcoming";
 
 const mLocalizer = momentLocalizer(moment);
 const CalendarEvents = () => {
@@ -84,31 +84,34 @@ const CalendarEvents = () => {
   }, []);
 
   return (
-    <section className="w-full flex justify-center items-center flex-col">
-      <div className="mb-5 w-11/12 flex flex-col justify-center items-center relative">
-        <div className="h-[90vh] w-full relative">
-          <Calendar
-            className="w-full m-0 p-0 text-3xl"
-            date={date}
-            onNavigate={(newDate) => {
-              setDate(newDate);
-            }}
-            events={events}
-            localizer={mLocalizer}
-            defaultView="month"
-            views={["month"]}
-            components={{
-              toolbar: CustomToolbar,
-              event: CustomEvents,
-              eventWrapper: CustomEventWrapper,
-            }}
-            onSelectEvent={(event) => setEvent(event)}
-          />
-        </div>
+    <>
+      <Upcoming events={events} />
+      <section className="w-full flex justify-center items-center flex-col">
+        <div className="mb-5 w-11/12 flex flex-col justify-center items-center relative">
+          <div className="h-[90vh] w-full relative">
+            <Calendar
+              className="w-full m-0 p-0 text-3xl"
+              date={date}
+              onNavigate={(newDate) => {
+                setDate(newDate);
+              }}
+              events={events}
+              localizer={mLocalizer}
+              defaultView="month"
+              views={["month"]}
+              components={{
+                toolbar: CustomToolbar,
+                event: CustomEvents,
+                eventWrapper: CustomEventWrapper,
+              }}
+              onSelectEvent={(event) => setEvent(event)}
+            />
+          </div>
 
-        {event && <Modal event={event} setEvent={setEvent} />}
-      </div>
-    </section>
+          {event && <Modal event={event} setEvent={setEvent} />}
+        </div>
+      </section>
+    </>
   );
 };
 

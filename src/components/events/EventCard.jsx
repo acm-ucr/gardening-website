@@ -1,25 +1,23 @@
-//import React from "react";
+import { MdOutlineLocationOn } from "react-icons/md";
+
 const EventCard = ({ Month, Day, Time, EventName, Location, Description }) => {
   return (
-    <div className="w-full flex flex-row lg:flex-row justify-between">
-      <div className="w-full lg:w-[47.5%] flex flex-row mt-[1%] rounded-lg drop-shadow-lg overflow-hidden">
-        <div className="w-1/3 flex flex-col justify-center items-center text-3xl md:text-4xl font-bold bg-white pt-1">
-          <p>{Month}</p>
-          <p className="text-7xl md:text-8xl">{Day}</p>
-          <p className="-my-[6%] md:-my-[6%]">{Time}</p>
-        </div>
-        <div className="w-2/3 font-bold text-gardening-white-100 bg-gardening-yellow-200">
-          <div className="m-[5%]">
-            <p className="sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl">
-              {EventName}
-            </p>
-            <p className="sm:text-xl md:text-2xl lg:text-xl xl:text-2xl">
-              {Location}
-            </p>
-            <p className="sm:text-md md:text-lg lg:text-sm xl:text-lg font-normal">
-              {Description}
-            </p>
-          </div>
+    <div className="w-[90%] sm:w-2/5 flex rounded-lg overflow-hidden">
+      <div className="w-2/5 py-3 flex flex-col bg-white items-center justify-center">
+        <span className="text-2xl font-bold">{Month}</span>
+        <span className="text-5xl font-black">{Day}</span>
+        <span className="text-2xl font-bold">{Time}</span>
+      </div>
+      <div className="w-3/5 flex items-center justify-center bg-gardening-yellow-200">
+        <div className="w-[90%] py-3 my-auto flex flex-col text-white text-wrap hyphens-auto">
+          <span className="text-2xl sm:text-3xl font-black">{EventName}</span>
+          <span className="text-lg flex mb-2">
+            <MdOutlineLocationOn className="text-2xl -ml-1" />
+            <span className="my-auto">{Location}</span>
+          </span>
+          <span className="text-md sm:text-lg">
+            {Description ?? "No description provided"}
+          </span>
         </div>
       </div>
     </div>

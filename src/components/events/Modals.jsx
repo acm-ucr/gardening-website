@@ -13,7 +13,7 @@ const Modal = ({ event, setEvent }) => {
           className="text-white rotate-45 p-0 hover:scale-110 duration-300 hover:text-gardening-tan-100 hover:cursor-pointer text-3xl mx-3"
         />
       </div>
-      <div className="p-3 bg-white rounded-bl-2xl rounded-br-2xl text-wrap">
+      <div className="p-3 bg-white rounded-bl-2xl rounded-br-2xl text-wrap overflow-hidden">
         <div className="pl-2 text-xl font-black">
           {event.allDay ? (
             <p className="mx-0 my-1">All day</p>
@@ -24,16 +24,15 @@ const Modal = ({ event, setEvent }) => {
                 {event.end.toLocaleTimeString().split(":")[0]}&nbsp;
                 {event.end.toLocaleTimeString().split(":")[2].split(" ")[1]}
               </p>
-              <p className="mx-0 my-1 text-wrap">
+              <p className="mx-0 my-1">
                 {event.location ?? "No location specified"}
               </p>
-              <p className="font-medium text-lg mx-0 my-1 truncate">
+              <p className="font-medium text-lg mx-0 my-1">
                 {event.description ?? "No description specified"}
               </p>
             </>
           )}
         </div>
-        {/* <div className="md:text-lg text-sm p-2">{event.summary}</div> */}
       </div>
     </div>
   );

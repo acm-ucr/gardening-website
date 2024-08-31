@@ -1,19 +1,38 @@
-import Card from "@/components/events/EventCard";
-import { EventData } from "@/data/event.js";
+import EventCard from "@/components/events/EventCard";
 
-const Upcoming = () => {
+const NUM_CARDS = 2;
+const dateNow = new Date();
+const pastEventsFilter = (event) => event.start >= dateNow;
+const eventsComparator = (event1, event2) => {
+  if (event1.start < event2.start) return -1;
+  else if (event1.start > event2.start) return 1;
+  else return 0;
+};
+
+const Upcoming = ({ events }) => {
+  const orderedEvents = events.filter(pastEventsFilter).sort(eventsComparator);
+  console.log(
+    "orderedEvents",
+    orderedEvents.map((e) => e.start)
+  );
+  const eventsToShow = orderedEvents.slice(
+    0,
+    Math.min(NUM_CARDS, orderedEvents.length)
+  );
+  console.log("eventsToShow", eventsToShow);
   return (
-    <div className="my-10 w-11/12 mx-auto text-gardening-brown-100 flex">
-      <div className="my-10 w-11/12 mx-auto text-gardening-brown-100">
-        <p className="font-bold text-5xl lg:text-7xl">Upcoming Events</p>
-        {EventData.map((CARD, index) => (
-          <Card
-            Month={CARD.Month}
-            Day={CARD.Day}
-            Time={CARD.Time}
-            EventName={CARD.EventName}
-            Location={CARD.Location}
-            Description={CARD.Description}
+    <div className="my-10 w-11/12 mx-auto text-gardening-brown-100">
+      <p className="font-bold text-5xl lg:text-7xl">Upcoming Events</p>
+
+      <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-around gap-4">
+        {eventsToShow.map((event, index) => (
+          <EventCard
+            Month={event.start.toLocaleString("en-US", { month: "short" })}
+            Day={event.start.getDate()}
+            Time={event.start.toLocaleTimeString("en-US")}
+            EventName={event.title}
+            Location={event.location}
+            Description={event.description}
             key={index}
             custom={index * 0.1}
           />
