@@ -2,7 +2,7 @@ import { MdOutlineLocationOn } from "react-icons/md";
 
 const EventCard = ({ Month, Day, Time, EventName, Location, Description }) => {
   return (
-    <div className="w-[90%] sm:w-2/5 flex rounded-lg overflow-hidden">
+    <div className="w-[90%] sm:w-2/5 flex rounded-lg overflow-hidden shadow-md">
       <div className="w-2/5 py-3 flex flex-col bg-white items-center justify-center">
         <span className="text-2xl font-bold">{Month}</span>
         <span className="text-5xl font-black">{Day}</span>
