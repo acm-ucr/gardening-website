@@ -49,7 +49,7 @@ const Footer = () => {
             </Link>
             <Link
               target="_blank"
-              href="https://www.instagram.com/ucrgardening/?hl=en"
+              href="mailto:ucrgardening@gmail.com"
               className="flex my-auto font-semibold text-lg text-white no-underline hover:text-blue-200"
             >
               <IoMdMail className="my-auto mr-2 text-3xl" />
@@ -59,7 +59,7 @@ const Footer = () => {
             </Link>
             <Link
               target="_blank"
-              href="https://www.instagram.com/ucrgardening/?hl=en"
+              href="https://discord.gg/rnsKpb8DfB"
               className="flex my-auto font-semibold text-lg text-white no-underline hover:text-blue-200"
             >
               <FaDiscord className="my-auto mr-2 text-3xl" />
@@ -67,7 +67,7 @@ const Footer = () => {
             </Link>
             <Link
               target="_blank"
-              href="https://www.instagram.com/ucrgardening/?hl=en"
+              href="https://highlanderlink.ucr.edu/organization/gardenclub"
               className="flex my-auto font-semibold text-lg text-white no-underline hover:text-blue-200"
             >
               <FaLink className="my-auto mr-2 text-3xl" />
