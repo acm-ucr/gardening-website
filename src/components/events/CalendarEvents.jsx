@@ -10,6 +10,7 @@ import CustomEvents from "./CustomEvents";
 import CustomEventWrapper from "./CustomEventWrapper";
 import Modal from "./Modals";
 import Upcoming from "./Upcoming";
+import Link from "next/link";
 
 const mLocalizer = momentLocalizer(moment);
 const CalendarEvents = () => {
@@ -109,6 +110,19 @@ const CalendarEvents = () => {
           </div>
 
           {event && <Modal event={event} setEvent={setEvent} />}
+          <div className="w-[80%] text-center">
+            <p className="my-4 text-xl md:text-3xl font-black">
+              Check our Instagram, &nbsp;
+              <Link
+                target="_blank"
+                href="https://www.instagram.com/ucrgardening/?hl=en"
+                className="no-underline text-[#212529] hover:underline hover:text-gardening-green-100"
+              >
+                @ucrgardening
+              </Link>
+              ,&nbsp; for links and addition info!
+            </p>
+          </div>
         </div>
       </section>
     </>
