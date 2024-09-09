@@ -7,17 +7,17 @@ import { FaBars } from "react-icons/fa";
 const items = [
   {
     name: "Board",
-    link: "board",
+    link: "/board",
     target: "_self",
   },
   {
     name: "Events",
-    link: "events",
+    link: "/events",
     target: "_self",
   },
   {
     name: "Scrapbook",
-    link: "gallery",
+    link: "/gallery",
     target: "_self",
   },
   {
@@ -36,7 +36,6 @@ const Navigation = () => {
     >
       <Navbar.Brand>
         <Link
-          eventkey="1"
           className="text-gardening-tan-100 text-3xl no-underline font-black"
           href="/"
         >
@@ -48,34 +47,35 @@ const Navigation = () => {
         className="!text-transparent border-0"
         aria-controls="basic-navbar-nav"
       >
-        <FaBars className=" text-white text-xl" />
+        <FaBars className="text-white text-xl" />
       </Navbar.Toggle>
 
-      <Navbar.Collapse className="flex items-center md:justify-end justify-center ">
-        <Nav className="w-12/12 flex items-center ">
+      <Navbar.Collapse className="flex items-center md:justify-end justify-center">
+        <Nav className="w-12/12 flex items-center">
           {items.map((item, index) => (
-            <Nav.Link
-              as={Link}
+            <Link
               key={index}
               href={item.link}
+              passHref
               target={item.target}
-              onClick={() => setSelected(item.name)}
-              className="py-2 px-4"
+              className="no-underline hover:opacity-80"
             >
-              <div className="flex-col items-center">
-                {item.name === "Join Now" ? (
-                  <div className="bg-gardening-tan-100 px-3 py-2 rounded-full text-gardening-green-100">
-                    <div className="text-gardening-green-100 font-black text-xl">
+              <Nav.Link className="py-2 px-4">
+                <div className="flex-col items-center">
+                  {item.name === "Join Now" ? (
+                    <div className="bg-gardening-tan-100 px-3 py-2 rounded-full text-gardening-green-100">
+                      <div className="text-gardening-green-100 font-black text-xl">
+                        {item.name}
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="text-gardening-tan-100 font-black text-xl">
                       {item.name}
                     </div>
-                  </div>
-                ) : (
-                  <div className="text-gardening-tan-100 font-black text-xl">
-                    {item.name}
-                  </div>
-                )}
-              </div>
-            </Nav.Link>
+                  )}
+                </div>
+              </Nav.Link>
+            </Link>
           ))}
         </Nav>
       </Navbar.Collapse>
