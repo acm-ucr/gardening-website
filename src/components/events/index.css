@@ -34,8 +34,21 @@
   display: none;
 }
 
+.rbc-event-content {
+  padding: 0;
+  margin: 0;
+  background-color: #af907a;
+  border-radius: 6px;
+  width: 97.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .rbc-event {
-  background-color: #c78e7c;
-  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.rbc-row-segment {
   margin-top: 0.5rem;
 }

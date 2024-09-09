@@ -1,5 +1,4 @@
 "use client";
-import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
@@ -12,7 +11,7 @@ const items = [
     target: "_self",
   },
   {
-    name: "Calendar",
+    name: "Events",
     link: "events",
     target: "_self",
   },
@@ -29,7 +28,6 @@ const items = [
 ];
 
 const Navigation = () => {
-  const [setSelected] = useState("");
   return (
     <Navbar
       collapseOnSelect
@@ -38,7 +36,6 @@ const Navigation = () => {
     >
       <Navbar.Brand>
         <Link
-          onClick={() => setSelected("")}
           eventkey="1"
           className="text-gardening-tan-100 text-3xl no-underline font-black"
           href="/"

@@ -1,18 +1,23 @@
 import Image from "next/image";
-import placeholder from "@/public/catOrangeGardening.webp";
+import { Scrapbook } from "@/data/scrapbook";
 
 const Photos = () => {
   return (
-    <div className="p-16">
-      <p className="text-gardening-brown-100 text-6xl font-black">Scrapbook</p>
+    <div className="p-[3%]">
+      <p className="text-gardening-brown-100 text-6xl font-black pl-[2%] pt-[2%]">
+        Scrapbook
+      </p>
 
-      <div className="grid grid-cols-3 gap-y-12 justify-items-center py-7">
-        {Array.from({ length: 9 }).map((_, index) => (
-          <div key={index} className="w-full py-1 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+        {Scrapbook.map((imgSrc, index) => (
+          <div
+            key={index}
+            className="w-[95%] h-[300px] my-3 overflow-hidden flex items-center justify-center"
+          >
             <Image
-              src={placeholder}
+              src={imgSrc}
               alt={`Gallery image ${index + 1}`}
-              className="w-11/12"
+              className="object-cover w-full h-full"
             />
           </div>
         ))}
