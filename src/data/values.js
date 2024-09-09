@@ -1,19 +1,24 @@
-import { FaLeaf, FaUsers, FaLightbulb } from "react-icons/fa";
+import { GiPlantRoots } from "react-icons/gi";
+import { PiPlant } from "react-icons/pi";
+import { GiLeafSwirl } from "react-icons/gi";
 
 export const BoardData = [
   {
-    icon: FaLeaf,
+    icon: GiLeafSwirl,
     color: "bg-gardening-brown-300",
     value: "Sustain",
+    styles: "text-lg sm:text-2xl font-bold text-wrap hyphens-auto",
   },
   {
-    icon: FaLightbulb,
+    icon: PiPlant,
     color: "bg-gardening-yellow-100",
     value: "Educate",
+    styles: "text-lg sm:text-2xl font-bold text-wrap hyphens-auto",
   },
   {
-    icon: FaUsers,
+    icon: GiPlantRoots,
     color: "bg-gardening-red-200",
-    value: "Connect",
+    value: "Community",
+    styles: "text-md sm:text-xl font-bold text-wrap hyphens-auto",
   },
 ];

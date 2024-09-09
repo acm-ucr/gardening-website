@@ -38,10 +38,15 @@
   padding: 0;
   margin: 0;
   background-color: #af907a;
+  border-radius: 6px;
+  width: 97.5%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rbc-event {
   padding: 0;
+  background-color: transparent;
 }
 
 .rbc-row-segment {

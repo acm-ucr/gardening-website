@@ -20,9 +20,7 @@ const Values = () => {
             >
               <item.icon className="text-3xl sm:text-5xl text-white" />
             </div>
-            <p className="text-lg sm:text-2xl font-bold text-wrap hyphens-auto">
-              {item.value}
-            </p>
+            <p className={`${item.styles}`}>{item.value}</p>
           </div>
         ))}
       </div>
