@@ -8,7 +8,7 @@ import "./index.css";
 import CustomToolbar from "./CustomToolbar";
 import CustomEvents from "./CustomEvents";
 import CustomEventWrapper from "./CustomEventWrapper";
-import Modal from "./Modals";
+import Modal from "./Modal";
 import Upcoming from "./Upcoming";
 import Link from "next/link";
 
@@ -55,8 +55,6 @@ const CalendarEvents = () => {
           &singleEvents=true&orderBy=startTime&timeMin=${startDate}&timeMax=${endDate}`
         );
         const data = await response.json();
-
-        console.log("finding all day", data);
 
         const arr = data.items;
         const items = [];

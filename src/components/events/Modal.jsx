@@ -1,4 +1,6 @@
 import { AiOutlinePlus } from "react-icons/ai";
+import { WiTime9 } from "react-icons/wi";
+import { MdOutlineLocationOn } from "react-icons/md";
 
 const Modal = ({ event, setEvent }) => {
   console.log("event", event);
@@ -19,12 +21,14 @@ const Modal = ({ event, setEvent }) => {
             <p className="mx-0 my-1">All day</p>
           ) : (
             <>
-              <p className="mx-0 my-1">
+              <p className="mx-0 my-1 flex gap-2">
+                <WiTime9 />
                 {event.start.toLocaleTimeString().split(":")[0]}&nbsp;-&nbsp;
                 {event.end.toLocaleTimeString().split(":")[0]}&nbsp;
                 {event.end.toLocaleTimeString().split(":")[2].split(" ")[1]}
               </p>
-              <p className="mx-0 my-1">
+              <p className="mx-0 my-1 flex gap-2">
+                <MdOutlineLocationOn />
                 {event.location ?? "No location specified"}
               </p>
               <p className="font-medium text-lg mx-0 my-1">
