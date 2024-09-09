@@ -6,14 +6,14 @@ import { CiShare1 } from "react-icons/ci";
 const Footer = () => {
   return (
     <div className="w-full px-[5%] flex flex-col sm:flex-row justify-between items-start text-white bg-gardening-green-100 py-5 gap-5">
-      <div className="flex flex-col ml-">
+      <div className="flex flex-col">
         <Link
           target="_blank"
           href="https://docs.google.com/forms/d/e/1FAIpQLSehu3p6UycFVJ6SmSPQL1Foi2r_fuvODGsnqk_4o_aBmbzZqw/viewform?usp=sf_link"
           className="flex gap-2 text-white text-3xl lg:text-4xl font-semibold no-underline duration-150 hover:scale-105"
         >
-          Join Our Newsletter!
-          <CiShare1 className="mb-2.5" />
+          <span className="mt-0.5">Join Our Newsletter!</span>
+          <CiShare1 className="" />
         </Link>
       </div>
       <div className="flex flex-col gap-4 sm:flex-row">

@@ -24,6 +24,7 @@ const items = [
     name: "Join Now",
     link: "https://discord.com/invite/T2xVxxMtcx",
     target: "_blank",
+    rel: "noopener noreferrer",
   },
 ];
 
@@ -51,30 +52,28 @@ const Navigation = () => {
       </Navbar.Toggle>
 
       <Navbar.Collapse className="flex items-center md:justify-end justify-center">
-        <Nav className="w-12/12 flex items-center">
+        <Nav className="w-12/12 flex items-center gap-3">
           {items.map((item, index) => (
             <Link
               key={index}
               href={item.link}
-              passHref
               target={item.target}
+              rel={item.rel}
               className="no-underline hover:opacity-80"
             >
-              <Nav.Link className="py-2 px-4">
-                <div className="flex-col items-center">
-                  {item.name === "Join Now" ? (
-                    <div className="bg-gardening-tan-100 px-3 py-2 rounded-full text-gardening-green-100">
-                      <div className="text-gardening-green-100 font-black text-xl">
-                        {item.name}
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="text-gardening-tan-100 font-black text-xl">
+              <div className="flex-col items-center">
+                {item.name === "Join Now" ? (
+                  <div className="bg-gardening-tan-100 px-3 py-2 rounded-full text-gardening-green-100">
+                    <div className="text-gardening-green-100 font-black text-xl">
                       {item.name}
                     </div>
-                  )}
-                </div>
-              </Nav.Link>
+                  </div>
+                ) : (
+                  <div className="text-gardening-tan-100 font-black text-xl">
+                    {item.name}
+                  </div>
+                )}
+              </div>
             </Link>
           ))}
         </Nav>
