@@ -13,7 +13,7 @@ const Footer = () => {
           className="flex gap-2 text-white text-3xl lg:text-4xl font-semibold no-underline duration-150 hover:scale-105"
         >
           Join Our Newsletter!
-          <CiShare1 className="mb-2" />
+          <CiShare1 className="mb-2.5" />
         </Link>
       </div>
       <div className="flex flex-col gap-4 sm:flex-row">
