@@ -13,7 +13,9 @@ const EventCard = ({ Month, Day, Time, EventName, Location, Description }) => {
           <span className="text-2xl sm:text-3xl font-black">{EventName}</span>
           <span className="text-lg flex mb-2">
             <MdOutlineLocationOn className="text-2xl" />
-            <span className="my-auto text-wrap">{Location}</span>
+            <span className="my-auto text-wrap">
+              {Location ?? "No location provided"}
+            </span>
           </span>
           <span className="text-md sm:text-lg">
             {Description ?? "No description provided"}
