@@ -12,8 +12,8 @@ const EventCard = ({ Month, Day, Time, EventName, Location, Description }) => {
         <div className="w-[90%] py-3 my-auto flex flex-col text-white text-wrap hyphens-auto">
           <span className="text-2xl sm:text-3xl font-black">{EventName}</span>
           <span className="text-lg flex mb-2">
-            <MdOutlineLocationOn className="text-2xl -ml-1" />
-            <span className="my-auto">{Location}</span>
+            <MdOutlineLocationOn className="text-2xl" />
+            <span className="my-auto text-wrap">{Location}</span>
           </span>
           <span className="text-md sm:text-lg">
             {Description ?? "No description provided"}
