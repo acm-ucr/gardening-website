@@ -1,7 +1,7 @@
 import Image from "next/image";
 import tableLamp from "@/public/assets/tableLamp.webp";
 import potPlant4 from "@/public/assets/potPlant4.webp";
-import sitting from "@/public/assets/sitting.webp";
+import sitting from "@/public/assets/Sitting.webp";
 
 const Graphic = () => {
   return (
