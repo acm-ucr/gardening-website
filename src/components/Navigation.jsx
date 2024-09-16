@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
+import { usePathname } from "next/navigation"; // Import usePathname
 
 const items = [
   {
@@ -29,6 +30,8 @@ const items = [
 ];
 
 const Navigation = () => {
+  const pathname = usePathname(); // Get current route
+
   return (
     <Navbar
       collapseOnSelect
@@ -47,6 +50,7 @@ const Navigation = () => {
       <Navbar.Toggle
         className="!text-transparent border-0"
         aria-controls="basic-navbar-nav"
+        aria-label="Toggle navigation"
       >
         <FaBars className="text-white text-xl" />
       </Navbar.Toggle>
@@ -59,17 +63,22 @@ const Navigation = () => {
               href={item.link}
               target={item.target}
               rel={item.rel}
-              className="no-underline hover:opacity-80"
+              aria-label={item.name}
+              className={`no-underline hover:opacity-80 ${
+                pathname === item.link ? "underline" : ""
+              }`}
             >
               <div className="flex-col items-center">
                 {item.name === "Join Now" ? (
-                  <div className="bg-gardening-tan-100 px-3 py-2 rounded-full text-gardening-green-100">
-                    <div className="text-gardening-green-100 font-black text-xl">
+                  <div className="bg-gardening-tan-100 px-3 pt-2 pb-1 rounded-full text-gardening-green-100">
+                    <div className="text-gardening-green-100 font-black text-xl sm:text-2xl">
                       {item.name}
                     </div>
                   </div>
                 ) : (
-                  <div className="text-gardening-tan-100 font-black text-xl">
+                  <div
+                    className={`text-gardening-tan-100 font-black text-xl sm:text-2xl`}
+                  >
                     {item.name}
                   </div>
                 )}

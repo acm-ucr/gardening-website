@@ -17,29 +17,6 @@ const CalendarEvents = () => {
   const [date, setDate] = useState(new Date());
   const [events, setEvents] = useState([]);
   const [event, setEvent] = useState(null);
-  // const dummyEvents = [
-  //   {
-  //     title: "Event 2",
-  //     start: new Date(2024, 6, 20, 10, 0),
-  //     end: new Date(2024, 6, 21, 11, 0),
-  //     location: "WCH",
-  //     summary: "the best event",
-  //   },
-  //   {
-  //     title: "Event 1",
-  //     start: new Date(2024, 7, 20, 10, 0),
-  //     end: new Date(2024, 7, 21, 11, 0),
-  //     location: "WCH",
-  //     summary: "even better event",
-  //   },
-  //   {
-  //     title: "Event 3",
-  //     start: new Date(2024, 7, 20, 10, 0),
-  //     end: new Date(2024, 7, 20, 12, 0),
-  //     location: "WCH",
-  //     summary: "even better event",
-  //   },
-  // ];
 
   useEffect(() => {
     const startDate = new Date(

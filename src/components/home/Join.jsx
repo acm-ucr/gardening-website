@@ -26,10 +26,10 @@ const Join = () => {
         </div>
 
         <div className="w-4/5 sm:w-[45%] flex flex-col items-center sm:items-start">
-          <p className="text-4xl sm:text-5xl mt-4 mb-0 font-bold">
+          <p className="text-[5vw] sm:text-[4vw] mt-4 mb-0 font-bold">
             Join UCR Gardening!
           </p>
-          <p className="w-4/5 my-3 mb-4 text-lg sm:text-xl font-semibold">
+          <p className="w-4/5 my-3 mb-4 text-[3vw] sm:text-[2vw] lg:text-[1.6vw] font-semibold">
             {
               "We hope to create a safe space for gardeners of all levels. Join our organization and be a part of developing community gardeners in partnership with other students, local nonprofit organizations, and local community activists!"
             }
@@ -39,7 +39,7 @@ const Join = () => {
             target="_blank"
             className="pt-2 px-4 text-xl sm:text-3xl font-bold no-underline text-[#212529] border-[2px] border-[#212529] rounded-full duration-300 hover:bg-gardening-green-100 hover:-gardening-green-100 hover:text-white"
           >
-            <span className="text-xl sm:text-3xl">JOIN NOW!</span>
+            <span className="text-[4vw] md:text-[2vw]">JOIN NOW!</span>
           </Link>
         </div>
       </div>

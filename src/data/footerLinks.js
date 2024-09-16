@@ -1,4 +1,10 @@
-import { FaInstagram, FaDiscord, FaRegCompass } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaDiscord,
+  FaRegCompass,
+  FaTiktok,
+  FaSpotify,
+} from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 
 export const aboutUs = [
@@ -38,6 +44,20 @@ export const getInTouch = [
     href: "https://highlanderlink.ucr.edu/organization/gardenclub",
     label: "Become a Member",
     icon: FaRegCompass,
+    iconStyle: "my-auto mr-2 text-3xl",
+    target: "_blank",
+  },
+  {
+    href: "https://www.tiktok.com/@ucr.gardening.club",
+    label: "@ucr.gardening.club",
+    icon: FaTiktok,
+    iconStyle: "my-auto mr-2 text-3xl",
+    target: "_blank",
+  },
+  {
+    href: "https://open.spotify.com/playlist/2ZFry2P55YQdbHHm5sodSe?si=35677810037040ef",
+    label: "Spotify Playlist",
+    icon: FaSpotify,
     iconStyle: "my-auto mr-2 text-3xl",
     target: "_blank",
   },

@@ -1,5 +1,17 @@
+const StatCard = ({ value, label }) => {
+  return (
+    <div className="w-[28.76%] pt-3 pb-2 flex flex-col items-center justify-center rounded-[60px] border-gardening-yellow-200 border-4 bg-gardening-tan-100">
+      <span className="text-4xl md:text-5xl lg:text-7xl font-bold text-gardening-yellow-200">
+        {value}
+      </span>
+      <span className="text-md md:text-xl lg:text-3xl font-semibold text-gardening-yellow-200">
+        {label}
+      </span>
+    </div>
+  );
+};
+
 const WhyJoin = () => {
-  // return <div>Join</div>;
   return (
     <div className="w-full flex flex-col items-center bg-gardening-yellow-100 border-y-8 border-gardening-yellow-200">
       <p className="text-5xl font-bold text-center text-gardening-tan-100 my-12">
@@ -7,28 +19,9 @@ const WhyJoin = () => {
       </p>
 
       <div className="w-5/6 flex justify-between mb-10 space-x-3">
-        <div className=" w-1/3 flex flex-col items-center justify-center rounded-full border-gardening-yellow-200 border-4 bg-gardening-tan-100 py-4">
-          <p className="text-4xl font-bold text-gardening-yellow-200">100+</p>
-          <p className="text-1xl font-medium text-gardening-yellow-200">
-            Workshops
-          </p>
-        </div>
-
-        <div className=" w-1/3 flex flex-col items-center justify-center rounded-full border-gardening-yellow-200 border-4 bg-gardening-tan-100 py-4">
-          <p className="text-4xl font-bold text-gardening-yellow-200">200+</p>
-
-          <p className="text-1xl font-medium text-gardening-yellow-200">
-            Members
-          </p>
-        </div>
-
-        <div className=" w-1/3 flex flex-col items-center justify-center rounded-full border-gardening-yellow-200 border-4 bg-gardening-tan-100 py-4">
-          <p className="text-4xl font-bold text-gardening-yellow-200">50+</p>
-
-          <p className="text-1xl font-medium text-gardening-yellow-200">
-            Alumnis
-          </p>
-        </div>
+        <StatCard value="100+" label="Workshops" />
+        <StatCard value="200+" label="Members" />
+        <StatCard value="50+" label="Alumni" />
       </div>
     </div>
   );
