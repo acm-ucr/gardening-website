@@ -18,7 +18,7 @@ export const BoardData = [
   {
     icon: GiPlantRoots,
     color: "bg-gardening-red-200",
-    value: "Community",
-    styles: "text-md sm:text-xl font-bold text-wrap hyphens-auto",
+    value: "Support",
+    styles: "text-lg sm:text-2xl font-bold text-wrap hyphens-auto",
   },
 ];

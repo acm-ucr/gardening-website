@@ -6,7 +6,7 @@ const EventCard = ({ Month, Day, Time, EventName, Location, Description }) => {
       <div className="w-2/5 py-3 flex flex-col bg-white items-center justify-center">
         <span className="text-2xl font-bold">{Month}</span>
         <span className="text-5xl font-black">{Day}</span>
-        <span className="text-2xl font-bold">{Time}</span>
+        <span className="text-2xl font-bold text-center">{Time}</span>
       </div>
       <div className="w-3/5 flex items-center justify-center bg-gardening-yellow-200">
         <div className="w-[90%] py-3 my-auto flex flex-col text-white text-wrap hyphens-auto">

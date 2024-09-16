@@ -2,6 +2,7 @@
 import { BoardData } from "@/data/board.js";
 import Card from "@/components/board/Card";
 import GroupPic from "@/components/board/GroupPic";
+import Graphic from "./Graphic";
 
 const Board = () => {
   return (
@@ -24,6 +25,7 @@ const Board = () => {
         </div>
       </div>
       <GroupPic />
+      <Graphic />
     </div>
   );
 };

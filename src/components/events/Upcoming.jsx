@@ -30,7 +30,11 @@ const Upcoming = ({ events }) => {
             <EventCard
               Month={event.start.toLocaleString("en-US", { month: "short" })}
               Day={event.start.getDate()}
-              Time={event.start.toLocaleTimeString("en-US")}
+              Time={event.start.toLocaleTimeString("en-US", {
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: true,
+              })}
               EventName={event.title}
               Location={event.location}
               Description={event.description}
