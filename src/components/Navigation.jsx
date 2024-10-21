@@ -23,7 +23,7 @@ const items = [
   },
   {
     name: "Join Now",
-    link: "https://discord.com/invite/T2xVxxMtcx",
+    link: "https://highlanderlink.ucr.edu/organization/gardenclub",
     target: "_blank",
     rel: "noopener noreferrer",
   },

@@ -1,7 +1,7 @@
 import WhyJoin from "./WhyJoin";
 import Link from "next/link";
 import Image from "next/image";
-import potPlant2 from "@/public/assets/potPlant2.webp";
+// import potPlant2 from "@/public/assets/potPlant2.webp";
 import join from "@/public/join.webp";
 
 const Join = () => {
@@ -17,29 +17,29 @@ const Join = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <Image
+            {/* <Image
               src={potPlant2}
               alt="potPlant2"
               className="w-[25%] -ml-[15%] -mt-[30%]"
-            />
+            /> */}
           </div>
         </div>
 
         <div className="w-4/5 sm:w-[45%] flex flex-col items-center sm:items-start">
-          <p className="text-[5vw] sm:text-[4vw] mt-4 mb-0 font-bold">
+          <p className="w-4/5 text-5xl mt-4 mb-0 font-bold">
             Join UCR Gardening!
           </p>
-          <p className="w-4/5 my-3 mb-4 text-[3vw] sm:text-[2vw] lg:text-[1.6vw] font-semibold">
+          <p className="w-4/5 my-3 mb-4 text-lg sm:text-xl font-semibold">
             {
               "We hope to create a safe space for gardeners of all levels. Join our organization and be a part of developing community gardeners in partnership with other students, local nonprofit organizations, and local community activists!"
             }
           </p>
           <Link
-            href="https://discord.com/invite/T2xVxxMtcx"
+            href="https://highlanderlink.ucr.edu/organization/gardenclub"
             target="_blank"
-            className="pt-2 px-4 text-xl sm:text-3xl font-bold no-underline text-[#212529] border-[2px] border-[#212529] rounded-full duration-300 hover:bg-gardening-green-100 hover:-gardening-green-100 hover:text-white"
+            className="pt-2 px-4 font-bold no-underline text-[#212529] border-[2px] border-[#212529] rounded-full duration-300 hover:bg-gardening-green-100 hover:-gardening-green-100 hover:text-white"
           >
-            <span className="text-[4vw] md:text-[2vw]">JOIN NOW!</span>
+            <span className="text-xl sm:text-3xl">JOIN NOW!</span>
           </Link>
         </div>
       </div>

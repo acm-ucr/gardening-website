@@ -1,56 +1,67 @@
 import cat from "@/public/assets/Cat.webp";
-import Chami from "@/public/board/Chami_Lifula.webp";
-import Jaylene from "@/public/board/Jaylene_Cardona.webp";
-import Minal from "@/public/board/Minal_Walvekar.webp";
-import Uditi from "@/public/board/Uditi_Desai.webp";
+import Giselle from "@/public/board/Giselle-Morales.webp";
+import Shirley from "@/public/board/Shirley-Hernandez-Lopez.webp";
+import Aye from "@/public/board/Aye-Aye-Htet.webp";
+import Janelle from "@/public/board/Janelle-Wan.webp";
+import Khang from "@/public/board/Khang-Nguyen.webp";
+import Ro from "@/public/board/Ro-Zheng.webp";
+// import Emmanuel from "@/public/board/Emmanuel-Green.webp";
+import Sansita from "@/public/board/Sansita-Narra.webp";
+import Kayla from "@/public/board/Kayla-Hua.webp";
 
 export const BoardData = [
   {
-    Name: "Hana Baig",
+    Name: "Kayla Hua",
     Position: "President",
     Year: "4th year",
-    image: cat,
+    image: Kayla,
   },
   {
-    Name: "Uditi Desai",
+    Name: "Shirley Lopez",
     Position: "Vice President",
-    Year: "3rd year",
-    image: Uditi,
+    Year: "4th year",
+    image: Shirley,
   },
   {
-    Name: "Chami Lifula",
+    Name: "Sansita Narra",
     Position: "Secretary",
-    Year: "3rd year",
-    image: Chami,
+    Year: "4th year",
+    image: Sansita,
   },
   {
-    Name: "Jaylene Cardona",
+    Name: "Khang Nguyen",
     Position: "Treasurer",
-    Year: "3rd year",
-    image: Jaylene,
+    Year: "4th year",
+    image: Khang,
   },
   {
-    Name: "Andrew Tseng",
-    Position: "Community Outreach Coordinator",
+    Name: "Ro Zheng",
+    Position: "Social Media Coordinator",
+    Year: "3rd year",
+    image: Ro,
+  },
+  {
+    Name: "Janelle Wan",
+    Position: "Social Media Coordinator",
+    Year: "3rd year",
+    image: Janelle,
+  },
+  {
+    Name: "Emmanuel Green",
+    Position: "Events Coordinator",
     Year: "4th year",
     image: cat,
   },
   {
-    Name: "Alexis Leonardo",
-    Position: "Social Media Coordinator",
+    Name: "Giselle Morales",
+    Position: "Events Coordinator",
     Year: "3rd year",
-    image: cat,
+    image: Giselle,
   },
   {
-    Name: "Minal Walvekar",
-    Position: "Social Media Coordinator",
-    Year: "4th year",
-    image: Minal,
-  },
-  {
-    Name: "Brian Hornor",
-    Position: "Historian",
-    Year: "3rd year",
-    image: cat,
+    Name: "Aye Aye Htet",
+    Position: "Outreach Coordinator",
+    Year: "2nd year",
+    image: Aye,
   },
 ];
