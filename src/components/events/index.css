@@ -59,5 +59,7 @@
 }
 
 .rbc-day-bg {
-  overflow-y: visible;
+  position: relative;
+  background-color: white;
+  overflow-y: scroll;
 }

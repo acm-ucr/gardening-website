@@ -14,11 +14,11 @@ const StatCard = ({ value, label }) => {
 const WhyJoin = () => {
   return (
     <div className="w-full flex flex-col items-center bg-gardening-yellow-100 border-y-8 border-gardening-yellow-200">
-      <p className="text-5xl font-bold text-center text-gardening-tan-100 my-12">
+      <p className="text-4xl sm:text-5xl font-bold text-center text-gardening-tan-100 my-12">
         Why Join?
       </p>
 
-      <div className="w-5/6 flex justify-between mb-10 space-x-3">
+      <div className="w-5/6 flex justify-between mb-10">
         <StatCard value="100+" label="Workshops" />
         <StatCard value="200+" label="Members" />
         <StatCard value="50+" label="Alumni" />

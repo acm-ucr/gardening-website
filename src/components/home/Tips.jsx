@@ -16,10 +16,10 @@ const Tips = () => {
 
       <div className="w-4/5 sm:w-[55%] mt-4 sm:mt-0 flex flex-col">
         <div className="w-[80%] mx-auto">
-          <p className="mt-4 text-[5vw] sm:text-[4vw] font-bold">
+          <p className="mt-4 text-3xl sm:text-5xl font-bold">
             Some Gardening Tips
           </p>
-          <p className="m-0 text-[3vw] sm:text-[2vw] lg:text-[1.6vw] font-semibold">
+          <p className="m-0 text-lg sm:text-xl font-semibold">
             <b>1. Start Small:</b> Begin with easy plants like herbs or tomatoes
             to learn the basics.
             <br />
