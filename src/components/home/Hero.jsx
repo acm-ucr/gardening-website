@@ -5,7 +5,7 @@ import potPlant3 from "@/public/assets/potPlant3.webp";
 
 const Hero = () => {
   return (
-    <div className="relative pt-20 flex justify-around">
+    <div className="relative pt-10 sm:pt-16 md:pt-20 flex justify-around">
       <div className="w-1/2">
         <p className="mb-0 ml-[10%] md:ml-[25%] text-[5vw] md:text-[4vw] font-black">
           Welcome to
@@ -30,7 +30,7 @@ const Hero = () => {
 
       {/* red cicle */}
       <div className="flex flex-col justify-center">
-        <div className="overflow-visible w-[11rem] h-[110%] sm:w-[30%] sm:h-[110%] lg:w-[30%] lg:h-[110%] bg-gardening-red-100 border-gardening-red-200 border-l-[20px] border-y-[20px] lg:border-l-[40px] lg:border-y-[25px] rounded-l-full absolute right-0 z-[-1]" />
+        <div className="-mt-10 sm:-mt-20 overflow-visible w-[11rem] h-[110%] sm:w-[30%] bg-gardening-red-100 border-gardening-red-200 border-l-[20px] border-y-[20px] lg:border-l-[40px] lg:border-y-[25px] rounded-l-full absolute right-0 z-[-1]" />
       </div>
     </div>
   );
