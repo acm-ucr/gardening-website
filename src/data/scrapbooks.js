@@ -1,0 +1,35 @@
+export const Scrapbooks = [
+  {
+    id: "hooks4Hope",
+    title: "Hooks 4 Hope",
+    thumbnail: "/scrapbook/hooks4Hope/IMG_3478.webp",
+    images: [
+      "@/public/scrapbook/hooks4Hope/IMG_3479.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3480.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3481.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3482.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3483.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3484.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3485.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3486.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3487.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3488.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3489.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3490.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3491.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3492.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3493.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3494.webp",
+      "@/public/scrapbook/hooks4Hope/IMG_3495.webp",
+    ],
+  },
+  {
+    id: "lunaAvo",
+    title: "Luna Avo Event",
+    thumbnail: "/scrapbook/lunaAvo/IMG_7291.webp",
+    images: [
+      "/scrapbook/lunaAvo/IMG_7296.webp",
+      "/scrapbook/lunaAvo/IMG_7314.webp",
+    ],
+  },
+];
