@@ -1,12 +1,12 @@
-"use client"; // Add this to make the component a Client Component
+"use client";
 
 import { useParams } from "next/navigation";
-import { Scrapbook } from "@/data/scrapbook";
+import { Scrapbooks } from "@/data/scrapbooks";
 import Image from "next/image";
 
 const GalleryGroup = () => {
-  const { id } = useParams(); // Retrieves the dynamic route parameter
-  const group = Scrapbook.find((item) => item.id === id);
+  const { id } = useParams();
+  const group = Scrapbooks.find((item) => item.id === id);
 
   if (!group) {
     return <p>Group not found</p>;
@@ -19,12 +19,16 @@ const GalleryGroup = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {group.images.map((imgSrc, index) => (
-          <div key={index} className="w-full h-72 overflow-hidden">
+          <div
+            key={index}
+            className="relative w-full h-64 max-w-sm mx-auto overflow-hidden"
+          >
             <Image
               src={imgSrc}
               alt={`Image ${index + 1}`}
-              layout="fill"
-              objectFit="cover"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         ))}
